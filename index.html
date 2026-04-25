@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anchor Partners provides workflow automation consulting for lower middle market asset managers. Discovery engagements and purpose-built automation tools.">
+    <title>Anchor Partners | Workflow Automation for Asset Managers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1B2A4A;
+            --navy-light: #243656;
+            --white: #FFFFFF;
+            --gold: #C9A84C;
+            --gold-light: #d4b865;
+            --gray: #F4F5F7;
+            --gray-dark: #E8EAED;
+            --text-secondary: #64748b;
+            --max-width: 1100px;
+            --nav-height: 80px;
+            --radius: 16px;
+            --radius-sm: 8px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--nav-height);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--navy);
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem; }
+        h3 { font-size: 1.25rem; margin-bottom: 0.75rem; font-weight: 600; }
+
+        p { margin-bottom: 1rem; }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 8rem 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-family: inherit;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            color: var(--navy);
+            box-shadow: 0 4px 24px rgba(201, 168, 76, 0.3);
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(201, 168, 76, 0.4);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-navy {
+            background: var(--navy);
+            color: var(--white);
+            box-shadow: 0 4px 24px rgba(27, 42, 74, 0.3);
+        }
+
+        .btn-navy:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(27, 42, 74, 0.4);
+        }
+
+        .btn-arrow::after {
+            content: '→';
+            transition: transform 0.3s ease;
+        }
+
+        .btn-arrow:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* Navigation */
+        .nav-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-header.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy);
+            letter-spacing: -0.02em;
+        }
+
+        .nav-logo .anchor-icon {
+            color: var(--gold);
+            font-size: 1.375rem;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover { color: var(--navy); }
+
+        .nav-cta .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.875rem;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: var(--navy);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hero */
+        .hero {
+            padding: calc(var(--nav-height) + 6rem) 0 6rem;
+            background: linear-gradient(165deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(201, 168, 76, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            background: rgba(201, 168, 76, 0.1);
+            border-radius: 100px;
+            border: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .hero h1 {
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--white) 0%, rgba(255,255,255,0.8) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 3rem;
+            max-width: 540px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Section Headers */
+        .section-header {
+            max-width: 600px;
+            margin-bottom: 4rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* Problem Section */
+        .problem {
+            background: var(--white);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .problem-card {
+            padding: 2.5rem;
+            background: var(--gray);
+            border-radius: var(--radius);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .problem-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .problem-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--white);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .problem-card p {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+        }
+
+        /* Services Section */
+        .services {
+            background: var(--gray);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            padding: 3rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            position: relative;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .service-card:hover {
+            border-color: var(--gray-dark);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+        }
+
+        .service-badge {
+            display: inline-block;
+            font-size: 0.6875rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card.discovery .service-badge {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .service-card.build .service-badge {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            color: var(--navy);
+        }
+
+        .service-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-price {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .service-card > p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features {
+            list-style: none;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.9375rem;
+            color: var(--navy);
+        }
+
+        .service-features li::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: var(--gray);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23C9A84C'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 12px;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: var(--white);
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            position: relative;
+        }
+
+        .steps-container::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: calc(16.67% + 24px);
+            right: calc(16.67% + 24px);
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            opacity: 0.3;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 8px 32px rgba(27, 42, 74, 0.2);
+        }
+
+        .step h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .step p {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+            font-size: 0.9375rem;
+        }
+
+        /* Case Study */
+        .case-study {
+            background: linear-gradient(165deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-study::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: -10%;
+            width: 50%;
+            height: 160%;
+            background: radial-gradient(ellipse, rgba(201, 168, 76, 0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .case-study .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .case-study .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .case-study h2 { color: var(--white); }
+
+        .case-study .section-header p {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .case-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .metric-card {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 0.75rem;
+        }
+
+        .metric-values {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+        }
+
+        .metric-before {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: line-through;
+        }
+
+        .metric-after {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .roi-callout {
+            padding: 3rem;
+            background: rgba(201, 168, 76, 0.1);
+            border-radius: var(--radius);
+            border: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .roi-amount {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .roi-detail {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0;
+        }
+
+        /* Why Us */
+        .why-us {
+            background: var(--gray);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .why-card {
+            padding: 2rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+        }
+
+        .why-icon {
+            width: 56px;
+            height: 56px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gray);
+            border-radius: 16px;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+        }
+
+        .why-card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .why-card p {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+            font-size: 0.875rem;
+        }
+
+        /* Pricing */
+        .pricing {
+            background: var(--white);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 800px;
+        }
+
+        .pricing-card {
+            padding: 3rem;
+            background: var(--gray);
+            border-radius: var(--radius);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .pricing-card.featured {
+            background: linear-gradient(165deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--white);
+        }
+
+        .pricing-card.featured h3,
+        .pricing-card.featured .pricing-amount {
+            color: var(--white);
+        }
+
+        .pricing-card.featured .pricing-period {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .pricing-card.featured .pricing-features li {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .pricing-card.featured .pricing-features li::before {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-amount {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--navy);
+            letter-spacing: -0.02em;
+        }
+
+        .pricing-period {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .pricing-features {
+            list-style: none;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.9375rem;
+            color: var(--navy);
+        }
+
+        .pricing-features li::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: var(--white);
+            border-radius: 50%;
+            flex-shrink: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23C9A84C'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 12px;
+        }
+
+        .pricing-note {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--gray);
+            border-radius: var(--radius-sm);
+            font-size: 0.9375rem;
+            color: var(--text-secondary);
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 60%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .cta-banner .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-banner h2 {
+            color: var(--navy);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--navy);
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .footer-logo .anchor-icon { color: var(--gold); }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover { color: var(--white); }
+
+        .footer-copy {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .reveal.visible {
+            animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .reveal-delay-1 { animation-delay: 0.1s !important; }
+        .reveal-delay-2 { animation-delay: 0.2s !important; }
+        .reveal-delay-3 { animation-delay: 0.3s !important; }
+        .reveal-delay-4 { animation-delay: 0.4s !important; }
+
+        @keyframes revealUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .case-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --nav-height: 70px;
+            }
+
+            section {
+                padding: 5rem 0;
+            }
+
+            .nav-right {
+                position: fixed;
+                top: var(--nav-height);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 2rem;
+                gap: 2rem;
+                background: var(--white);
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+            }
+
+            .nav-right.active {
+                transform: translateX(0);
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .nav-links a {
+                font-size: 1.125rem;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 6px);
+            }
+
+            .nav-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -6px);
+            }
+
+            .hero {
+                min-height: auto;
+                padding: calc(var(--nav-height) + 4rem) 0 4rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .problem-grid,
+            .services-grid,
+            .steps-container,
+            .why-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps-container::before {
+                display: none;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1.25rem;
+            }
+
+            .service-card,
+            .pricing-card {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="nav-header">
+        <nav class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="anchor-icon">⚓</span>
+                <span>Anchor Partners</span>
+            </a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#case-study">Case Study</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="https://cal.com/anchorpartners/30min" target="_blank" class="btn btn-gold">Schedule Discovery</a>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-eyebrow">Workflow Automation for Asset Managers</span>
+                    <h1>Your team is losing $100K+ a year to manual work they never knew could be automated</h1>
+                    <p class="hero-subtitle">We find it, quantify it, and eliminate it. So you can focus on what actually moves the needle.</p>
+                    <div class="hero-buttons">
+                        <a href="https://cal.com/anchorpartners/30min" target="_blank" class="btn btn-gold btn-arrow">Start with Discovery</a>
+                        <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem" class="problem">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">The Problem</span>
+                    <h2>The Hidden Cost of Manual Work</h2>
+                    <p>Most firms know they're inefficient. Few know exactly where, or what it's costing them.</p>
+                </div>
+                <div class="problem-grid">
+                    <div class="problem-card reveal reveal-delay-1">
+                        <div class="problem-icon">📊</div>
+                        <h3>Hidden Waste</h3>
+                        <p>Manual tasks consuming hours daily with no visibility into what could be automated</p>
+                    </div>
+                    <div class="problem-card reveal reveal-delay-2">
+                        <div class="problem-icon">💰</div>
+                        <h3>Unknown ROI</h3>
+                        <p>Inefficiency costs buried in operations with no clear path to improvement</p>
+                    </div>
+                    <div class="problem-card reveal reveal-delay-3">
+                        <div class="problem-icon">⏱️</div>
+                        <h3>No Bandwidth</h3>
+                        <p>Teams too busy executing to step back and identify what should change</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Services</span>
+                    <h2>Two Ways to Work With Us</h2>
+                    <p>Start with Discovery to understand your opportunities. Add Build when you're ready to act.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card discovery reveal reveal-delay-1">
+                        <span class="service-badge">Start Here</span>
+                        <h3>Discovery</h3>
+                        <p class="service-price">$5,000 – $10,000/year</p>
+                        <p>A comprehensive audit of your manual workflows with a clear, ROI-quantified path forward.</p>
+                        <ul class="service-features">
+                            <li>Live workflow observation</li>
+                            <li>Intelligence-powered analysis</li>
+                            <li>ROI-quantified report</li>
+                            <li>Prioritized recommendations</li>
+                        </ul>
+                    </div>
+                    <div class="service-card build reveal reveal-delay-2">
+                        <span class="service-badge">Add When Ready</span>
+                        <h3>Build</h3>
+                        <p class="service-price">Starting at $10,000/year per automation</p>
+                        <p>Purpose-built automation tools tailored to your specific workflows and systems.</p>
+                        <ul class="service-features">
+                            <li>Custom-built tools</li>
+                            <li>Annual subscription</li>
+                            <li>Discovery fee credited to Year 1</li>
+                            <li>No lock-in</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Process</span>
+                    <h2>How It Works</h2>
+                    <p>A straightforward process designed for busy teams.</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step reveal reveal-delay-1">
+                        <div class="step-number">01</div>
+                        <h3>Observe</h3>
+                        <p>We record and map your team's live workflows, identifying every manual task and bottleneck.</p>
+                    </div>
+                    <div class="step reveal reveal-delay-2">
+                        <div class="step-number">02</div>
+                        <h3>Analyze</h3>
+                        <p>We quantify the ROI potential of each opportunity and prioritize by impact and feasibility.</p>
+                    </div>
+                    <div class="step reveal reveal-delay-3">
+                        <div class="step-number">03</div>
+                        <h3>Deliver</h3>
+                        <p>You get a detailed roadmap. Or we build the automation ourselves. Your choice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="case-study" class="case-study">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Case Study</span>
+                    <h2>Back-Office Operations Transformation</h2>
+                    <p>Mid-sized asset manager, $200M AUM</p>
+                </div>
+                <div class="case-content">
+                    <div class="metrics-grid">
+                        <div class="metric-card reveal reveal-delay-1">
+                            <div class="metric-label">Hours/Week on Manual Tasks</div>
+                            <div class="metric-values">
+                                <span class="metric-before">40+</span>
+                                <span class="metric-after">8</span>
+                            </div>
+                        </div>
+                        <div class="metric-card reveal reveal-delay-2">
+                            <div class="metric-label">Annual Ops Cost</div>
+                            <div class="metric-values">
+                                <span class="metric-before">$220K</span>
+                                <span class="metric-after">$85K</span>
+                            </div>
+                        </div>
+                        <div class="metric-card reveal reveal-delay-3">
+                            <div class="metric-label">Data Entry Errors</div>
+                            <div class="metric-values">
+                                <span class="metric-before">12/mo</span>
+                                <span class="metric-after">&lt;1/mo</span>
+                            </div>
+                        </div>
+                        <div class="metric-card reveal reveal-delay-4">
+                            <div class="metric-label">Report Turnaround</div>
+                            <div class="metric-values">
+                                <span class="metric-before">3 days</span>
+                                <span class="metric-after">Same day</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roi-callout reveal">
+                        <div class="roi-amount">$135K saved annually</div>
+                        <p class="roi-detail">Team refocused on high-value work instead of repetitive tasks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="why-us">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Why Us</span>
+                    <h2>Built for the Middle Market</h2>
+                    <p>Enterprise results without enterprise complexity or cost.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card reveal reveal-delay-1">
+                        <div class="why-icon">💵</div>
+                        <h3>Low Entry Cost</h3>
+                        <p>$5K–$10K vs $50K+ enterprise minimums</p>
+                    </div>
+                    <div class="why-card reveal reveal-delay-2">
+                        <div class="why-icon">🔄</div>
+                        <h3>No Sunk Costs</h3>
+                        <p>Discovery fee credited if you build with us</p>
+                    </div>
+                    <div class="why-card reveal reveal-delay-3">
+                        <div class="why-icon">⚡</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Weeks, not months</p>
+                    </div>
+                    <div class="why-card reveal reveal-delay-4">
+                        <div class="why-icon">🎯</div>
+                        <h3>Right-Sized</h3>
+                        <p>Mid-market focus, not enterprise bloat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Pricing</span>
+                    <h2>Simple, Transparent Pricing</h2>
+                    <p>Choose the engagement level that fits your needs.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card reveal reveal-delay-1">
+                        <h3>Standard</h3>
+                        <div class="pricing-amount">$5,000</div>
+                        <span class="pricing-period">/year</span>
+                        <ul class="pricing-features">
+                            <li>1 discovery call/month</li>
+                            <li>ROI-quantified reports</li>
+                            <li>Annual commitment</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card featured reveal reveal-delay-2">
+                        <h3>Pro</h3>
+                        <div class="pricing-amount">$10,000</div>
+                        <span class="pricing-period">/year</span>
+                        <ul class="pricing-features">
+                            <li>3 discovery calls/month</li>
+                            <li>ROI-quantified reports</li>
+                            <li>Annual commitment</li>
+                            <li>Discovery fee credited toward build</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="pricing-note reveal">If you choose to build with us, your Discovery fee becomes Year 1 credit.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="cta-banner">
+            <div class="container">
+                <h2 class="reveal">Ready to find out what manual work is actually costing your firm?</h2>
+                <a href="https://cal.com/anchorpartners/30min" target="_blank" class="btn btn-navy btn-arrow reveal reveal-delay-1">Schedule Your Discovery Call</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="anchor-icon">⚓</span>
+                    <span>Anchor Partners</span>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#case-study">Case Study</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <p class="footer-copy">© 2025 Anchor Partners</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Navigation
+            const navToggle = document.querySelector('.nav-toggle');
+            const navRight = document.querySelector('.nav-right');
+
+            if (navToggle && navRight) {
+                navToggle.addEventListener('click', function() {
+                    navToggle.classList.toggle('active');
+                    navRight.classList.toggle('active');
+                });
+
+                navRight.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        navToggle.classList.remove('active');
+                        navRight.classList.remove('active');
+                    });
+                });
+            }
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Scroll animations
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+            revealElements.forEach(function(el) {
+                observer.observe(el);
+            });
+
+            // Nav scroll effect
+            const navHeader = document.querySelector('.nav-header');
+
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 20) {
+                    navHeader.classList.add('scrolled');
+                } else {
+                    navHeader.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

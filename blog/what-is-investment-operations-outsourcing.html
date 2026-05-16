@@ -383,6 +383,23 @@
         .definition-box p {
             margin: 0;
             font-size: 1.0625rem;
+        }
+
+        /* Infographic */
+        .infographic {
+            margin: 2.5rem 0;
+        }
+
+        .infographic svg {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .infographic figcaption {
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 0.75rem;
             line-height: 1.8;
             color: var(--text);
         }
@@ -648,6 +665,66 @@
             </ul>
 
             <p>The fundamental value exchange: you get the outcome without hiring, training, or managing anyone new. The provider owns the process and guarantees the result.</p>
+
+            <!-- Comparison Diagram -->
+            <figure class="infographic" role="img" aria-label="Comparison of outsourcing vs consulting vs software approaches">
+                <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:600px;height:auto;display:block;margin:2rem auto;">
+                    <!-- Background -->
+                    <rect width="600" height="320" fill="#fafbfc" rx="12"/>
+
+                    <!-- Title -->
+                    <text x="300" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#0f1729">Three Approaches to Operations</text>
+
+                    <!-- Outsourcing Box (highlighted) -->
+                    <rect x="20" y="50" width="175" height="250" fill="#0f1729" rx="8"/>
+                    <rect x="25" y="55" width="165" height="55" fill="#b8964c" rx="4"/>
+                    <text x="107" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#0f1729">OUTSOURCING</text>
+                    <text x="107" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#0f1729">Provider does the work</text>
+
+                    <text x="35" y="135" font-family="Inter, sans-serif" font-size="11" fill="#fafbfc">You get:</text>
+                    <text x="35" y="155" font-family="Inter, sans-serif" font-size="10" fill="#b8964c">+ Completed deliverables</text>
+                    <text x="35" y="172" font-family="Inter, sans-serif" font-size="10" fill="#b8964c">+ Owned outcomes</text>
+                    <text x="35" y="189" font-family="Inter, sans-serif" font-size="10" fill="#b8964c">+ Subscription pricing</text>
+                    <text x="35" y="206" font-family="Inter, sans-serif" font-size="10" fill="#b8964c">+ 4-8 week start</text>
+
+                    <text x="35" y="235" font-family="Inter, sans-serif" font-size="11" fill="#fafbfc">You provide:</text>
+                    <text x="35" y="255" font-family="Inter, sans-serif" font-size="10" fill="rgba(255,255,255,0.6)">Data access</text>
+                    <text x="35" y="272" font-family="Inter, sans-serif" font-size="10" fill="rgba(255,255,255,0.6)">Approval on exceptions</text>
+
+                    <!-- Consulting Box -->
+                    <rect x="212" y="50" width="175" height="250" fill="#ffffff" rx="8" stroke="#e5e7eb" stroke-width="1"/>
+                    <rect x="217" y="55" width="165" height="55" fill="#e5e7eb" rx="4"/>
+                    <text x="300" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#5c6477">CONSULTING</text>
+                    <text x="300" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">You get advice</text>
+
+                    <text x="227" y="135" font-family="Inter, sans-serif" font-size="11" fill="#5c6477">You get:</text>
+                    <text x="227" y="155" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Recommendations</text>
+                    <text x="227" y="172" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Assessment reports</text>
+                    <text x="227" y="189" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Project-based fees</text>
+                    <text x="227" y="206" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">One-time engagement</text>
+
+                    <text x="227" y="235" font-family="Inter, sans-serif" font-size="11" fill="#5c6477">You still need:</text>
+                    <text x="227" y="255" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Staff to execute</text>
+                    <text x="227" y="272" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Ongoing management</text>
+
+                    <!-- Software Box -->
+                    <rect x="404" y="50" width="175" height="250" fill="#ffffff" rx="8" stroke="#e5e7eb" stroke-width="1"/>
+                    <rect x="409" y="55" width="165" height="55" fill="#e5e7eb" rx="4"/>
+                    <text x="492" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#5c6477">SOFTWARE</text>
+                    <text x="492" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">You get a tool</text>
+
+                    <text x="419" y="135" font-family="Inter, sans-serif" font-size="11" fill="#5c6477">You get:</text>
+                    <text x="419" y="155" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Platform access</text>
+                    <text x="419" y="172" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Automation features</text>
+                    <text x="419" y="189" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">License fees</text>
+                    <text x="419" y="206" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Self-service model</text>
+
+                    <text x="419" y="235" font-family="Inter, sans-serif" font-size="11" fill="#5c6477">You still need:</text>
+                    <text x="419" y="255" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Staff to operate</text>
+                    <text x="419" y="272" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Training &amp; support</text>
+                </svg>
+                <figcaption style="text-align:center;font-size:0.875rem;color:#5c6477;margin-top:0.5rem;">Outsourcing delivers outcomes; consulting and software still require your team to execute</figcaption>
+            </figure>
 
             <h2>What Services Are Included in Investment Operations Outsourcing?</h2>
 

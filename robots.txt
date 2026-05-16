@@ -1,0 +1,8 @@
+# Anchor Partners - www.anchorpartners.group
+# SEO robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.anchorpartners.group/sitemap.xml

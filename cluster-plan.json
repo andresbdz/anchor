@@ -1,0 +1,91 @@
+{
+  "seed_keyword": "investment operations outsourcing",
+  "created": "2026-05-16",
+  "validated": true,
+  "validation_source": "SEMrush broad match export",
+  "pillar": {
+    "title": "Investment Operations Outsourcing: The Complete Guide for Asset Managers",
+    "keyword": "investment operations outsourcing",
+    "volume": 140,
+    "kd": 5,
+    "secondary_keywords": [
+      "investment outsourcing operations",
+      "outsourcing investment operations",
+      "outsourced investment operations",
+      "investment fund operations outsourcing"
+    ],
+    "combined_volume": 250,
+    "template": "ultimate-guide",
+    "word_count": 2500,
+    "url": "/blog/investment-operations-outsourcing-guide",
+    "brief": "cluster-briefs/01-pillar-investment-operations-outsourcing-guide.md",
+    "status": "planned"
+  },
+  "spokes": [
+    {
+      "id": "spoke-1",
+      "title": "What is Investment Operations Outsourcing?",
+      "keyword": "what is investment operations outsourcing",
+      "volume": 30,
+      "template": "explainer",
+      "word_count": 1200,
+      "url": "/blog/what-is-investment-operations-outsourcing",
+      "brief": "cluster-briefs/02-explainer-what-is-investment-operations-outsourcing.md",
+      "status": "written",
+      "file": "blog/what-is-investment-operations-outsourcing.html",
+      "published": "2026-05-16"
+    },
+    {
+      "id": "spoke-2",
+      "title": "Top Investment Operations Outsourcing Providers (2026)",
+      "keyword": "investment operations outsourcing providers",
+      "volume": 40,
+      "kd": 7,
+      "serp_features": ["AI Overview", "Video", "Related searches"],
+      "template": "best-of",
+      "word_count": 1500,
+      "url": "/blog/investment-operations-outsourcing-providers",
+      "brief": "cluster-briefs/03-providers-investment-operations-outsourcing-providers.md",
+      "status": "planned"
+    }
+  ],
+  "links": [
+    {"from": "pillar", "to": "spoke-1", "type": "mandatory", "anchor": "what is investment operations outsourcing"},
+    {"from": "pillar", "to": "spoke-2", "type": "mandatory", "anchor": "top providers"},
+    {"from": "spoke-1", "to": "pillar", "type": "mandatory", "anchor": "investment operations outsourcing"},
+    {"from": "spoke-1", "to": "spoke-2", "type": "cluster", "anchor": "evaluate providers"},
+    {"from": "spoke-2", "to": "pillar", "type": "mandatory", "anchor": "investment operations outsourcing"},
+    {"from": "spoke-2", "to": "spoke-1", "type": "cluster", "anchor": "what is investment operations outsourcing"}
+  ],
+  "meta": {
+    "total_posts": 3,
+    "total_spokes": 2,
+    "total_links": 6,
+    "estimated_words": 5200,
+    "total_volume": 400,
+    "avg_kd": 6,
+    "execution_order": ["spoke-1", "spoke-2", "pillar"]
+  },
+  "aeo_scores": {
+    "spoke-1": {"google_aio": 85, "chatgpt": 88, "perplexity": 80},
+    "spoke-2": {"google_aio": 70, "chatgpt": 75, "perplexity": 85},
+    "pillar": {"google_aio": 75, "chatgpt": 82, "perplexity": 70}
+  },
+  "keywords_validated": [
+    {"keyword": "investment operations outsourcing", "volume": 140, "kd": 5, "intent": "Informational"},
+    {"keyword": "investment fund operations outsourcing", "volume": 50, "kd": 4, "intent": "Informational"},
+    {"keyword": "investment operations outsourcing providers", "volume": 40, "kd": 7, "intent": "Commercial"},
+    {"keyword": "investment outsourcing operations", "volume": 40, "kd": 12, "intent": "Informational"},
+    {"keyword": "outsourcing investment operations", "volume": 40, "kd": 0, "intent": "Informational"},
+    {"keyword": "outsourced investment operations", "volume": 30, "kd": null, "intent": "Informational"},
+    {"keyword": "what is investment operations outsourcing", "volume": 30, "kd": null, "intent": "Informational"},
+    {"keyword": "northern trust investment operations outsourcing", "volume": 20, "kd": null, "intent": "Navigational"}
+  ],
+  "keywords_not_validated": [
+    "middle office outsourcing",
+    "back office outsourcing",
+    "fund administration outsourcing",
+    "asset management operations",
+    "back office operations cost"
+  ]
+}

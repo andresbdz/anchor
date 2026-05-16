@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights on investment operations, outsourcing, and operational efficiency for asset managers. Expert perspectives from Anchor Partners.">
+    <title>Blog | Anchor Partners</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.anchorpartners.group/blog/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.anchorpartners.group/blog/">
+    <meta property="og:title" content="Blog | Anchor Partners">
+    <meta property="og:description" content="Insights on investment operations, outsourcing, and operational efficiency for asset managers.">
+    <meta property="og:image" content="https://www.anchorpartners.group/og-image.png">
+    <meta property="og:site_name" content="Anchor Partners">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog | Anchor Partners">
+    <meta name="twitter:description" content="Insights on investment operations, outsourcing, and operational efficiency for asset managers.">
+    <meta name="twitter:image" content="https://www.anchorpartners.group/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0f1729;
+            --navy-mid: #1a2744;
+            --white: #ffffff;
+            --off-white: #fafbfc;
+            --gold: #b8964c;
+            --gold-hover: #a3843f;
+            --text: #0f1729;
+            --text-muted: #5c6477;
+            --border: #e5e7eb;
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 3rem;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.125rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .logo-mark {
+            width: 28px;
+            height: 28px;
+            background: var(--navy);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-mark svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text);
+        }
+
+        .nav-cta {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            background: var(--navy);
+            color: var(--white);
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .nav-cta:hover {
+            background: var(--navy-mid);
+        }
+
+        /* Blog Header */
+        .blog-header {
+            padding: 8rem 0 4rem;
+            background: var(--off-white);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .blog-header h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 600;
+            line-height: 1.15;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+        }
+
+        .blog-header p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+
+        /* Blog List */
+        .blog-list {
+            padding: 4rem 0;
+        }
+
+        .blog-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .blog-card {
+            display: block;
+            padding: 2rem;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .blog-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .blog-card-meta {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-card-meta time {
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        .blog-card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        .blog-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card-link {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: var(--gold);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .blog-card-link svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.2s;
+        }
+
+        .blog-card:hover .blog-card-link svg {
+            transform: translateX(4px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            padding: 3rem 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer-logo {
+            color: var(--white);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .footer-logo .logo-mark {
+            background: var(--navy-mid);
+        }
+
+        .footer-copy {
+            font-size: 0.875rem;
+            color: rgba(255,255,255,0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .blog-header {
+                padding: 6rem 0 3rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-inner">
+                <a href="/" class="logo">
+                    <div class="logo-mark">
+                        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="5" r="2"/>
+                            <line x1="12" y1="7" x2="12" y2="19"/>
+                            <path d="M5 19c0-4 3-7 7-7s7 3 7 7"/>
+                        </svg>
+                    </div>
+                    Anchor Partners
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/#problem">Problem</a></li>
+                    <li><a href="/#how-it-works">Process</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                    <li><a href="/blog/" class="active">Blog</a></li>
+                </ul>
+                <a href="https://cal.com/anchorpartners/30min" target="_blank" class="nav-cta">Book a call</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>Insights on investment operations, outsourcing, and operational efficiency for asset managers.</p>
+        </div>
+    </header>
+
+    <section class="blog-list">
+        <div class="container">
+            <div class="blog-grid">
+
+                <a href="/blog/what-is-investment-operations-outsourcing.html" class="blog-card">
+                    <div class="blog-card-meta">
+                        <time datetime="2026-05-16">May 16, 2026</time>
+                        <span> · 5 min read</span>
+                    </div>
+                    <h2>What is Investment Operations Outsourcing?</h2>
+                    <p>A clear explanation of investment operations outsourcing: what it includes, who it's for, and when it makes sense for asset managers.</p>
+                    <span class="blog-card-link">
+                        Read article
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </span>
+                </a>
+
+                <!-- More posts will be added here -->
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <a href="/" class="footer-logo">
+                    <div class="logo-mark">
+                        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="5" r="2"/>
+                            <line x1="12" y1="7" x2="12" y2="19"/>
+                            <path d="M5 19c0-4 3-7 7-7s7 3 7 7"/>
+                        </svg>
+                    </div>
+                    Anchor Partners
+                </a>
+                <p class="footer-copy">&copy; 2026 Anchor Partners</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

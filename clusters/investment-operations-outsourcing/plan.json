@@ -1,0 +1,60 @@
+{
+  "seed_keyword": "investment operations outsourcing",
+  "created": "2026-05-16",
+  "validated": true,
+  "pillar": {
+    "title": "Investment Operations Outsourcing: Complete Guide [2026]",
+    "keyword": "investment operations outsourcing",
+    "template": "ultimate-guide",
+    "word_count": 2500,
+    "url": "/blog/investment-operations-outsourcing-guide.html",
+    "status": "written"
+  },
+  "clusters": [
+    {
+      "name": "Foundational",
+      "id": "cluster-1",
+      "posts": [
+        {
+          "id": "1.1",
+          "title": "What is Investment Operations Outsourcing?",
+          "keyword": "what is investment operations outsourcing",
+          "template": "explainer",
+          "word_count": 1200,
+          "url": "/blog/what-is-investment-operations-outsourcing.html",
+          "status": "written"
+        }
+      ]
+    },
+    {
+      "name": "Commercial",
+      "id": "cluster-2",
+      "posts": [
+        {
+          "id": "2.1",
+          "title": "Top Investment Operations Outsourcing Providers (2026)",
+          "keyword": "investment operations outsourcing providers",
+          "template": "best-of",
+          "word_count": 1800,
+          "url": "/blog/investment-operations-outsourcing-providers.html",
+          "status": "written"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {"from": "pillar", "to": "1.1", "type": "mandatory", "anchor": "what is investment operations outsourcing"},
+    {"from": "pillar", "to": "2.1", "type": "mandatory", "anchor": "top providers"},
+    {"from": "1.1", "to": "pillar", "type": "mandatory", "anchor": "investment operations outsourcing"},
+    {"from": "1.1", "to": "2.1", "type": "cluster", "anchor": "outsourcing providers"},
+    {"from": "2.1", "to": "pillar", "type": "mandatory", "anchor": "investment operations outsourcing"},
+    {"from": "2.1", "to": "1.1", "type": "cluster", "anchor": "what is investment operations outsourcing"}
+  ],
+  "meta": {
+    "total_posts": 3,
+    "total_clusters": 2,
+    "total_spokes": 2,
+    "total_links": 6,
+    "estimated_words": 5500
+  }
+}

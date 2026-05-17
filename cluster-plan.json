@@ -1,95 +1,153 @@
 {
-  "seed_keyword": "investment operations outsourcing",
-  "created": "2026-05-16",
+  "seed_keyword": "middle office outsourcing",
+  "created": "2026-05-17",
   "validated": true,
-  "validation_source": "SEMrush broad match export",
+  "validation_source": "SERP overlap analysis via WebSearch",
   "pillar": {
-    "title": "Investment Operations Outsourcing: The Complete Guide for Asset Managers",
-    "keyword": "investment operations outsourcing",
-    "volume": 140,
-    "kd": 5,
+    "title": "Middle Office Outsourcing: The Complete Guide for Asset Managers",
+    "keyword": "middle office outsourcing",
     "secondary_keywords": [
-      "investment outsourcing operations",
-      "outsourcing investment operations",
-      "outsourced investment operations",
-      "investment fund operations outsourcing"
+      "middle office outsourcing for asset managers",
+      "outsourced middle office services",
+      "middle office outsourcing guide"
     ],
-    "combined_volume": 250,
     "template": "ultimate-guide",
-    "word_count": 2500,
-    "url": "/blog/investment-operations-outsourcing-guide",
-    "brief": "cluster-briefs/01-pillar-investment-operations-outsourcing-guide.md",
-    "status": "written",
-    "file": "blog/investment-operations-outsourcing-guide.html",
-    "published": "2026-05-16"
+    "word_count": 2800,
+    "url": "/blog/middle-office-outsourcing-guide",
+    "status": "written"
   },
-  "spokes": [
+  "clusters": [
     {
-      "id": "spoke-1",
-      "title": "What is Investment Operations Outsourcing?",
-      "keyword": "what is investment operations outsourcing",
-      "volume": 30,
-      "template": "explainer",
-      "word_count": 1200,
-      "url": "/blog/what-is-investment-operations-outsourcing",
-      "brief": "cluster-briefs/02-explainer-what-is-investment-operations-outsourcing.md",
-      "status": "written",
-      "file": "blog/what-is-investment-operations-outsourcing.html",
-      "published": "2026-05-16"
+      "name": "Foundational/Explainer",
+      "id": "cluster-1",
+      "posts": [
+        {
+          "id": "1.1",
+          "title": "What is Middle Office? Definition, Functions & Role in Asset Management",
+          "keyword": "what is middle office",
+          "template": "explainer",
+          "word_count": 1400,
+          "url": "/blog/what-is-middle-office",
+          "status": "written"
+        },
+        {
+          "id": "1.2",
+          "title": "Middle Office vs Back Office vs Front Office: Key Differences",
+          "keyword": "middle office vs back office",
+          "template": "comparison",
+          "word_count": 1500,
+          "url": "/blog/middle-office-vs-back-office",
+          "status": "written"
+        }
+      ]
     },
     {
-      "id": "spoke-2",
-      "title": "Top Investment Operations Outsourcing Providers (2026)",
-      "keyword": "investment operations outsourcing providers",
-      "volume": 40,
-      "kd": 7,
-      "serp_features": ["AI Overview", "Video", "Related searches"],
-      "template": "best-of",
-      "word_count": 1500,
-      "url": "/blog/investment-operations-outsourcing-providers",
-      "brief": "cluster-briefs/03-providers-investment-operations-outsourcing-providers.md",
-      "status": "written",
-      "file": "blog/investment-operations-outsourcing-providers.html",
-      "published": "2026-05-16"
+      "name": "Decision/Evaluation",
+      "id": "cluster-2",
+      "posts": [
+        {
+          "id": "2.1",
+          "title": "Middle Office Outsourcing vs In-House: How to Decide",
+          "keyword": "middle office outsourcing vs in-house",
+          "template": "comparison",
+          "word_count": 1600,
+          "url": "/blog/middle-office-outsourcing-vs-in-house",
+          "status": "written"
+        },
+        {
+          "id": "2.2",
+          "title": "Signs You Need Middle Office Help (Before It's Too Late)",
+          "keyword": "when to outsource middle office",
+          "template": "listicle",
+          "word_count": 1200,
+          "url": "/blog/signs-you-need-middle-office-help",
+          "status": "written"
+        }
+      ]
+    },
+    {
+      "name": "Commercial/Provider",
+      "id": "cluster-3",
+      "posts": [
+        {
+          "id": "3.1",
+          "title": "Top Middle Office Outsourcing Providers Compared (2026)",
+          "keyword": "middle office outsourcing providers",
+          "template": "best-of",
+          "word_count": 1800,
+          "url": "/blog/middle-office-outsourcing-providers",
+          "status": "written"
+        },
+        {
+          "id": "3.2",
+          "title": "How Much Does Middle Office Outsourcing Cost?",
+          "keyword": "middle office outsourcing cost",
+          "template": "guide",
+          "word_count": 1100,
+          "url": "/blog/middle-office-outsourcing-cost",
+          "status": "written"
+        }
+      ]
     }
   ],
   "links": [
-    {"from": "pillar", "to": "spoke-1", "type": "mandatory", "anchor": "what is investment operations outsourcing"},
-    {"from": "pillar", "to": "spoke-2", "type": "mandatory", "anchor": "top providers"},
-    {"from": "spoke-1", "to": "pillar", "type": "mandatory", "anchor": "investment operations outsourcing"},
-    {"from": "spoke-1", "to": "spoke-2", "type": "cluster", "anchor": "evaluate providers"},
-    {"from": "spoke-2", "to": "pillar", "type": "mandatory", "anchor": "investment operations outsourcing"},
-    {"from": "spoke-2", "to": "spoke-1", "type": "cluster", "anchor": "what is investment operations outsourcing"}
+    {"from": "pillar", "to": "1.1", "type": "mandatory", "anchor": "what is middle office"},
+    {"from": "pillar", "to": "1.2", "type": "mandatory", "anchor": "middle office vs back office"},
+    {"from": "pillar", "to": "2.1", "type": "mandatory", "anchor": "outsourcing vs in-house"},
+    {"from": "pillar", "to": "2.2", "type": "mandatory", "anchor": "signs you need help"},
+    {"from": "pillar", "to": "3.1", "type": "mandatory", "anchor": "top providers"},
+    {"from": "pillar", "to": "3.2", "type": "mandatory", "anchor": "cost guide"},
+    {"from": "1.1", "to": "pillar", "type": "mandatory", "anchor": "middle office outsourcing"},
+    {"from": "1.1", "to": "1.2", "type": "cluster", "anchor": "back office differences"},
+    {"from": "1.2", "to": "pillar", "type": "mandatory", "anchor": "middle office outsourcing"},
+    {"from": "1.2", "to": "1.1", "type": "cluster", "anchor": "what is middle office"},
+    {"from": "1.2", "to": "2.1", "type": "cross", "anchor": "outsource vs keep in-house"},
+    {"from": "2.1", "to": "pillar", "type": "mandatory", "anchor": "middle office outsourcing"},
+    {"from": "2.1", "to": "2.2", "type": "cluster", "anchor": "signs you need help"},
+    {"from": "2.1", "to": "3.1", "type": "cross", "anchor": "evaluate providers"},
+    {"from": "2.2", "to": "pillar", "type": "mandatory", "anchor": "middle office outsourcing"},
+    {"from": "2.2", "to": "2.1", "type": "cluster", "anchor": "outsourcing decision"},
+    {"from": "2.2", "to": "3.2", "type": "cross", "anchor": "cost justification"},
+    {"from": "3.1", "to": "pillar", "type": "mandatory", "anchor": "middle office outsourcing"},
+    {"from": "3.1", "to": "3.2", "type": "cluster", "anchor": "pricing models"},
+    {"from": "3.2", "to": "pillar", "type": "mandatory", "anchor": "middle office outsourcing"},
+    {"from": "3.2", "to": "3.1", "type": "cluster", "anchor": "compare providers"}
+  ],
+  "cross_pillar_links": [
+    {"from": "pillar", "to": "/blog/investment-operations-outsourcing-guide", "anchor": "investment operations outsourcing"},
+    {"from": "1.1", "to": "/blog/what-is-investment-operations-outsourcing", "anchor": "investment operations"}
   ],
   "meta": {
-    "total_posts": 3,
-    "total_spokes": 2,
-    "total_links": 6,
-    "estimated_words": 5200,
-    "total_volume": 400,
-    "avg_kd": 6,
-    "execution_order": ["spoke-1", "spoke-2", "pillar"]
+    "total_posts": 7,
+    "total_clusters": 3,
+    "total_spokes": 6,
+    "total_links": 22,
+    "estimated_words": 11400,
+    "execution_order": ["1.1", "1.2", "2.2", "2.1", "3.2", "3.1", "pillar"]
   },
-  "aeo_scores": {
-    "spoke-1": {"google_aio": 85, "chatgpt": 88, "perplexity": 80},
-    "spoke-2": {"google_aio": 70, "chatgpt": 75, "perplexity": 85},
-    "pillar": {"google_aio": 75, "chatgpt": 82, "perplexity": 70}
+  "market_data": {
+    "market_size_2024": "$8.48B",
+    "market_size_2032": "$19.00B",
+    "cagr": "10.60%",
+    "small_firm_adoption": "44%",
+    "large_firm_adoption": "61%",
+    "cost_reduction_potential": "up to 30%"
   },
-  "keywords_validated": [
-    {"keyword": "investment operations outsourcing", "volume": 140, "kd": 5, "intent": "Informational"},
-    {"keyword": "investment fund operations outsourcing", "volume": 50, "kd": 4, "intent": "Informational"},
-    {"keyword": "investment operations outsourcing providers", "volume": 40, "kd": 7, "intent": "Commercial"},
-    {"keyword": "investment outsourcing operations", "volume": 40, "kd": 12, "intent": "Informational"},
-    {"keyword": "outsourcing investment operations", "volume": 40, "kd": 0, "intent": "Informational"},
-    {"keyword": "outsourced investment operations", "volume": 30, "kd": null, "intent": "Informational"},
-    {"keyword": "what is investment operations outsourcing", "volume": 30, "kd": null, "intent": "Informational"},
-    {"keyword": "northern trust investment operations outsourcing", "volume": 20, "kd": null, "intent": "Navigational"}
-  ],
-  "keywords_not_validated": [
-    "middle office outsourcing",
-    "back office outsourcing",
-    "fund administration outsourcing",
-    "asset management operations",
-    "back office operations cost"
+  "competitors": [
+    {
+      "name": "Limina",
+      "url": "https://www.limina.com/blog/guide-middle-office-outsourcing",
+      "type": "pillar competitor"
+    },
+    {
+      "name": "Empaxis",
+      "url": "https://www.empaxis.com/blog/top-middle-office-outsourcing-providers",
+      "type": "provider comparison competitor"
+    },
+    {
+      "name": "Alpha FMC",
+      "url": "https://alphafmc.com/blog/2025/07/11/rethinking-the-future-of-middle-office-outsource-insource-or-a-hybrid/",
+      "type": "thought leadership"
+    }
   ]
 }

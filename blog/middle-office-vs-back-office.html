@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Middle office vs back office: what's the difference? Clear comparison of functions, roles, and responsibilities in asset management firms.">
+    <title>Middle Office vs Back Office vs Front Office: Key Differences | Anchor Partners</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.anchorpartners.group/blog/middle-office-vs-back-office">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.anchorpartners.group/blog/middle-office-vs-back-office">
+    <meta property="og:title" content="Middle Office vs Back Office vs Front Office: Key Differences">
+    <meta property="og:description" content="Middle office vs back office: what's the difference? Clear comparison of functions, roles, and responsibilities in asset management firms.">
+    <meta property="og:image" content="https://www.anchorpartners.group/og-image.png">
+    <meta property="og:site_name" content="Anchor Partners">
+    <meta property="article:published_time" content="2026-05-17">
+    <meta property="article:author" content="Anchor Partners">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Middle Office vs Back Office vs Front Office: Key Differences">
+    <meta name="twitter:description" content="Middle office vs back office: what's the difference? Clear comparison of functions, roles, and responsibilities in asset management firms.">
+    <meta name="twitter:image" content="https://www.anchorpartners.group/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CM4F6M73K9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CM4F6M73K9');
+    </script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Middle Office vs Back Office vs Front Office: Key Differences",
+      "description": "Middle office vs back office: what's the difference? Clear comparison of functions, roles, and responsibilities in asset management firms.",
+      "author": {
+        "@type": "Organization",
+        "name": "Anchor Partners",
+        "url": "https://www.anchorpartners.group"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Anchor Partners",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.anchorpartners.group/favicon.svg"
+        }
+      },
+      "datePublished": "2026-05-17",
+      "dateModified": "2026-05-17",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.anchorpartners.group/blog/middle-office-vs-back-office"
+      }
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you outsource just the middle office?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many asset managers outsource middle office functions while keeping back office with their fund administrator or custodian. This is increasingly common for risk management, compliance monitoring, and performance measurement functions that require specialized expertise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which office is most expensive to run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The front office is typically most expensive due to high compensation for investment professionals. However, middle and back office costs scale with AUM and complexity. For a $200M fund, combined middle and back office costs typically represent 15-25 basis points of AUM annually."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do small firms need all three offices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all firms perform front, middle, and back office functions—the question is how they're staffed. At small firms, one or two people may handle both middle and back office. As AUM grows past $150M-$250M, specialization becomes necessary for quality and efficiency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if middle and back office aren't aligned?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Misalignment creates data discrepancies, failed trades, incorrect NAV calculations, and regulatory reporting errors. Common issues include position breaks between systems, missed corporate actions, and reconciliation failures. These errors damage investor confidence and create compliance risk."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0f1729;
+            --navy-mid: #1a2744;
+            --white: #ffffff;
+            --off-white: #fafbfc;
+            --gold: #b8964c;
+            --gold-hover: #a3843f;
+            --text: #0f1729;
+            --text-muted: #5c6477;
+            --border: #e5e7eb;
+            --max-width: 1200px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 3rem; }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+
+        .logo {
+            font-size: 1.125rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .logo-mark {
+            width: 28px;
+            height: 28px;
+            background: var(--navy);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-mark svg { width: 16px; height: 16px; stroke: var(--gold); fill: none; stroke-width: 2; }
+
+        .nav-cta {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            background: var(--navy);
+            color: var(--white);
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .nav-cta:hover { background: var(--navy-mid); }
+
+        .article-header {
+            padding: 8rem 0 4rem;
+            background: var(--off-white);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .article-header .container { max-width: 800px; }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .article-meta time { color: var(--gold); font-weight: 500; }
+
+        .article-updated {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            background: var(--off-white);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .author-byline {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            background: var(--navy);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .author-avatar svg { width: 24px; height: 24px; stroke: var(--gold); fill: none; stroke-width: 2; }
+        .author-info { font-size: 0.875rem; }
+        .author-info strong { display: block; color: var(--text); }
+        .author-info span { color: var(--text-muted); }
+
+        .article-header h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-excerpt { font-size: 1.25rem; color: var(--text-muted); line-height: 1.7; }
+
+        .article-content { padding: 4rem 0; }
+        .article-content .container { max-width: 800px; }
+
+        .article-content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin: 3rem 0 1.5rem;
+            color: var(--text);
+        }
+
+        .article-content h2:first-child { margin-top: 0; }
+
+        .article-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--text);
+        }
+
+        .article-content p { margin-bottom: 1.5rem; color: var(--text-muted); line-height: 1.8; }
+        .article-content strong { color: var(--text); font-weight: 600; }
+
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .article-content li { margin-bottom: 0.75rem; line-height: 1.7; }
+        .article-content a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+        .article-content a:hover { color: var(--gold-hover); }
+
+        .definition-box {
+            background: var(--off-white);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .definition-box p { margin: 0; font-size: 1.0625rem; }
+
+        .at-a-glance {
+            background: var(--navy);
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .at-a-glance h3 {
+            color: var(--gold);
+            margin: 0 0 1rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .at-a-glance ul { margin: 0; padding-left: 1.25rem; color: rgba(255,255,255,0.85); }
+        .at-a-glance li { margin-bottom: 0.5rem; }
+
+        .infographic { margin: 2.5rem 0; }
+        .infographic svg { border: 1px solid var(--border); border-radius: 12px; }
+        .infographic figcaption {
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 0.75rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.9375rem;
+        }
+
+        .comparison-table th {
+            background: var(--navy);
+            color: var(--white);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+
+        .comparison-table tr:hover td { background: var(--off-white); }
+        .comparison-table td:first-child { font-weight: 600; color: var(--text); }
+
+        .faq-section {
+            background: var(--off-white);
+            padding: 3rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+
+        .faq-section h2 { margin-top: 0; }
+
+        .faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+        .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .faq-item h3 { margin: 0 0 0.75rem; font-size: 1.0625rem; }
+        .faq-item p { margin: 0; font-size: 0.9375rem; }
+
+        .cta-box {
+            background: var(--navy);
+            color: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 { color: var(--white); margin-bottom: 1rem; }
+        .cta-box p { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; }
+
+        .cta-box .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 1rem 2rem;
+            background: var(--gold);
+            color: var(--navy);
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .cta-box .btn:hover { background: var(--gold-hover); }
+
+        footer { background: var(--navy); padding: 3rem 0; }
+        .footer-inner { display: flex; align-items: center; justify-content: space-between; }
+
+        .footer-logo {
+            color: var(--white);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .footer-logo .logo-mark { background: var(--navy-mid); }
+        .footer-copy { font-size: 0.875rem; color: rgba(255,255,255,0.4); }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 1.5rem; }
+            .article-header { padding: 6rem 0 3rem; }
+            .comparison-table { font-size: 0.8125rem; }
+            .comparison-table th, .comparison-table td { padding: 0.75rem; }
+            .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-inner">
+                <a href="/" class="logo">
+                    <div class="logo-mark">
+                        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="5" r="2"/>
+                            <line x1="12" y1="7" x2="12" y2="19"/>
+                            <path d="M5 19c0-4 3-7 7-7s7 3 7 7"/>
+                        </svg>
+                    </div>
+                    Anchor Partners
+                </a>
+                <a href="https://cal.com/anchorpartners/30min" target="_blank" class="nav-cta">Book a call</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container">
+            <div class="article-meta">
+                <time datetime="2026-05-17">May 17, 2026</time>
+                <span>|</span>
+                <span>8 min read</span>
+            </div>
+            <h1>Middle Office vs Back Office vs Front Office: Key Differences</h1>
+            <p class="article-excerpt">Front, middle, back—these aren't just spatial terms. Each layer of an asset manager performs distinct functions that must work together seamlessly.</p>
+            <div class="author-byline">
+                <div class="author-avatar">
+                    <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="5" r="2"/>
+                        <line x1="12" y1="7" x2="12" y2="19"/>
+                        <path d="M5 19c0-4 3-7 7-7s7 3 7 7"/>
+                    </svg>
+                </div>
+                <div class="author-info">
+                    <strong>Anchor Partners Team</strong>
+                    <span>Operations specialists for asset managers</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article class="article-content">
+        <div class="container">
+
+            <p class="article-updated">Last updated: May 17, 2026</p>
+
+            <div class="definition-box">
+                <p><strong>The middle office</strong> handles risk management, trade support, and performance measurement between trading (front office) and settlement (back office). The back office manages settlements, accounting, and recordkeeping. Front office generates revenue through trading and client relationships. Each layer has distinct functions but must work together seamlessly.</p>
+            </div>
+
+            <div class="at-a-glance">
+                <h3>At a Glance</h3>
+                <ul>
+                    <li>Front office: revenue generation (trading, portfolio management)</li>
+                    <li>Middle office: risk and support (compliance, trade support, performance)</li>
+                    <li>Back office: settlement and records (accounting, custody, reporting)</li>
+                    <li>Middle office outsourcing growing 10.6% CAGR (Fortune Business Insights, 2024)</li>
+                </ul>
+            </div>
+
+            <p>Understanding the distinction between front, middle, and back office matters for operational efficiency, talent allocation, and outsourcing decisions. Many asset managers—particularly those under $500M AUM—conflate middle and back office functions, creating gaps that institutional allocators identify during operational due diligence reviews conducted by organizations like the Alternative Investment Management Association (AIMA).</p>
+
+            <h2>How Do Front, Middle, and Back Office Compare?</h2>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Front Office</th>
+                        <th>Middle Office</th>
+                        <th>Back Office</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primary Role</td>
+                        <td>Revenue generation</td>
+                        <td>Risk & support</td>
+                        <td>Settlement & records</td>
+                    </tr>
+                    <tr>
+                        <td>Key Functions</td>
+                        <td>Trading, sales, PM</td>
+                        <td>Risk, compliance, data</td>
+                        <td>Accounting, custody</td>
+                    </tr>
+                    <tr>
+                        <td>Client-Facing?</td>
+                        <td>Yes</td>
+                        <td>Rarely</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Revenue Impact</td>
+                        <td>Direct</td>
+                        <td>Indirect</td>
+                        <td>Indirect</td>
+                    </tr>
+                    <tr>
+                        <td>Typical Headcount</td>
+                        <td>Highest</td>
+                        <td>Smallest</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>Outsourcing Rate</td>
+                        <td>Rarely</td>
+                        <td>Growing (44-61%)</td>
+                        <td>Often</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>What Is the Front Office?</h2>
+
+            <p>The front office generates revenue through investment decisions and client relationships. This is where alpha creation happens—the core competency that justifies an asset manager's existence. Front office functions represent what most people imagine when they think of "working in finance."</p>
+
+            <p><strong>Key front office roles include:</strong></p>
+
+            <ul>
+                <li><strong>Portfolio managers:</strong> Make investment decisions, construct portfolios, and oversee strategy execution. At most firms, PMs are the highest-compensated employees and drive firm economics.</li>
+                <li><strong>Traders:</strong> Execute buy and sell orders, manage execution quality, and maintain broker relationships. Responsible for minimizing market impact and transaction costs.</li>
+                <li><strong>Research analysts:</strong> Conduct fundamental or quantitative research to identify investment opportunities. Generate the insights that inform portfolio decisions.</li>
+                <li><strong>Client relationship managers:</strong> Handle investor communications, capital raising, and relationship management. Often overlap with marketing and sales functions.</li>
+            </ul>
+
+            <p>Front office functions are almost never outsourced because they represent the firm's core value proposition. Investors allocate capital based on investment capability, not operational efficiency. However, front office effectiveness depends heavily on middle and back office infrastructure providing accurate, timely data.</p>
+
+            <h2>What Is the Middle Office?</h2>
+
+            <p>The middle office is the operational layer between investment decisions (front office) and settlement (back office). It ensures trades are properly supported, risks are monitored, and performance is accurately measured. For a detailed explanation, see our guide on <a href="/blog/what-is-middle-office.html">what is middle office</a>.</p>
+
+            <p><strong>Core middle office functions include:</strong></p>
+
+            <ul>
+                <li><strong>Risk management:</strong> Position monitoring, exposure calculations, limit monitoring, value-at-risk analysis. Provides independent oversight of portfolio risks.</li>
+                <li><strong>Trade support:</strong> Trade matching, confirmation generation, settlement instructions, failed trade resolution. Bridges the gap between execution and settlement.</li>
+                <li><strong>Performance measurement:</strong> Return calculations, attribution analysis, benchmark comparison. Produces the figures used in investor reports and marketing.</li>
+                <li><strong>Compliance monitoring:</strong> Pre-trade and post-trade compliance checks, regulatory surveillance, policy adherence. Works closely with legal and regulatory teams.</li>
+                <li><strong>Data management:</strong> Investment Book of Record (IBOR), pricing, corporate actions, security master data. Maintains the single source of truth for positions.</li>
+            </ul>
+
+            <p>According to Deloitte's Alternative Investment Survey (2024), 44% of small firms and 61% of large firms have outsourced middle office functions. The middle office outsourcing market is growing at 10.6% CAGR, reaching an estimated $19 billion by 2032 (Fortune Business Insights, 2024).</p>
+
+            <h2>What Is the Back Office?</h2>
+
+            <p>The back office handles post-trade settlement, accounting, and recordkeeping. This is where transactions become final and records are maintained for regulatory, tax, and investor reporting purposes. Back office functions are essential but don't directly generate revenue.</p>
+
+            <p><strong>Core back office functions include:</strong></p>
+
+            <ul>
+                <li><strong>Trade settlement:</strong> Coordinating with custodians and counterparties to ensure trades settle properly. Managing failed trades and resolution.</li>
+                <li><strong>Fund accounting:</strong> Maintaining the official accounting books, calculating NAV, managing partnership allocations, processing subscriptions and redemptions.</li>
+                <li><strong>NAV calculation:</strong> Computing net asset value for pricing purposes. Critical for investor reporting and regulatory compliance.</li>
+                <li><strong>Custody coordination:</strong> Working with custodian banks to maintain asset safekeeping, process corporate actions, and reconcile positions.</li>
+                <li><strong>Regulatory reporting:</strong> Preparing and filing required reports with the Securities and Exchange Commission (SEC), state regulators, and other authorities.</li>
+                <li><strong>Transfer agency:</strong> For registered funds, managing shareholder records, processing transactions, and handling investor servicing.</li>
+            </ul>
+
+            <p>Back office outsourcing to fund administrators like Northern Trust, State Street, or SS&C became standard practice after the 2008 financial crisis, when institutional investors began demanding independent third-party administration. Today, most institutional-quality asset managers outsource significant back office functions.</p>
+
+            <h2>How Do the Three Offices Work Together?</h2>
+
+            <p>A single trade illustrates how front, middle, and back office functions connect:</p>
+
+            <!-- Trade Lifecycle Diagram -->
+            <figure class="infographic" role="img" aria-label="Trade lifecycle across front, middle, and back office">
+                <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:700px;height:auto;display:block;margin:2rem auto;">
+                    <rect width="700" height="360" fill="#fafbfc" rx="12"/>
+
+                    <!-- Title -->
+                    <text x="350" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0f1729">Trade Lifecycle: How the Three Offices Connect</text>
+
+                    <!-- Timeline line -->
+                    <line x1="50" y1="180" x2="650" y2="180" stroke="#e5e7eb" stroke-width="2"/>
+
+                    <!-- Step 1: Front Office -->
+                    <circle cx="100" cy="180" r="20" fill="#0f1729"/>
+                    <text x="100" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#b8964c">1</text>
+                    <text x="100" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#0f1729">FRONT OFFICE</text>
+                    <text x="100" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">PM decides to buy</text>
+                    <text x="100" y="248" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">100K shares XYZ</text>
+
+                    <!-- Arrow -->
+                    <path d="M130 180 L170 180" stroke="#b8964c" stroke-width="2" fill="none"/>
+                    <polygon points="170,180 164,176 164,184" fill="#b8964c"/>
+
+                    <!-- Step 2: Middle Office (Compliance) -->
+                    <circle cx="200" cy="180" r="20" fill="#b8964c"/>
+                    <text x="200" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0f1729">2</text>
+                    <text x="200" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#b8964c">MIDDLE OFFICE</text>
+                    <text x="200" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">Pre-trade compliance</text>
+                    <text x="200" y="248" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">check passes</text>
+
+                    <!-- Arrow -->
+                    <path d="M230 180 L270 180" stroke="#b8964c" stroke-width="2" fill="none"/>
+                    <polygon points="270,180 264,176 264,184" fill="#b8964c"/>
+
+                    <!-- Step 3: Front Office (Execution) -->
+                    <circle cx="300" cy="180" r="20" fill="#0f1729"/>
+                    <text x="300" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#b8964c">3</text>
+                    <text x="300" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#0f1729">FRONT OFFICE</text>
+                    <text x="300" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">Trader executes</text>
+                    <text x="300" y="248" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">order on exchange</text>
+
+                    <!-- Arrow -->
+                    <path d="M330 180 L370 180" stroke="#b8964c" stroke-width="2" fill="none"/>
+                    <polygon points="370,180 364,176 364,184" fill="#b8964c"/>
+
+                    <!-- Step 4: Middle Office (Trade Support) -->
+                    <circle cx="400" cy="180" r="20" fill="#b8964c"/>
+                    <text x="400" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0f1729">4</text>
+                    <text x="400" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#b8964c">MIDDLE OFFICE</text>
+                    <text x="400" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">Trade matching,</text>
+                    <text x="400" y="248" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">confirmation, IBOR</text>
+
+                    <!-- Arrow -->
+                    <path d="M430 180 L470 180" stroke="#b8964c" stroke-width="2" fill="none"/>
+                    <polygon points="470,180 464,176 464,184" fill="#b8964c"/>
+
+                    <!-- Step 5: Back Office -->
+                    <circle cx="500" cy="180" r="20" fill="#5c6477"/>
+                    <text x="500" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#fafbfc">5</text>
+                    <text x="500" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6477">BACK OFFICE</text>
+                    <text x="500" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">Settlement with</text>
+                    <text x="500" y="248" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">custodian (T+2)</text>
+
+                    <!-- Arrow -->
+                    <path d="M530 180 L570 180" stroke="#b8964c" stroke-width="2" fill="none"/>
+                    <polygon points="570,180 564,176 564,184" fill="#b8964c"/>
+
+                    <!-- Step 6: Back Office (Accounting) -->
+                    <circle cx="600" cy="180" r="20" fill="#5c6477"/>
+                    <text x="600" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#fafbfc">6</text>
+                    <text x="600" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6477">BACK OFFICE</text>
+                    <text x="600" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">Accounting entry,</text>
+                    <text x="600" y="248" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#5c6477">NAV update</text>
+
+                    <!-- Legend -->
+                    <rect x="200" y="290" width="12" height="12" fill="#0f1729" rx="2"/>
+                    <text x="220" y="300" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Front Office</text>
+
+                    <rect x="310" y="290" width="12" height="12" fill="#b8964c" rx="2"/>
+                    <text x="330" y="300" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Middle Office</text>
+
+                    <rect x="420" y="290" width="12" height="12" fill="#5c6477" rx="2"/>
+                    <text x="440" y="300" font-family="Inter, sans-serif" font-size="10" fill="#5c6477">Back Office</text>
+
+                    <!-- Timeline labels -->
+                    <text x="100" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#9ca3af">T-0</text>
+                    <text x="200" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#9ca3af">T-0</text>
+                    <text x="300" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#9ca3af">T-0</text>
+                    <text x="400" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#9ca3af">T-0</text>
+                    <text x="500" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#9ca3af">T+2</text>
+                    <text x="600" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#9ca3af">T+2</text>
+
+                    <!-- Bottom note -->
+                    <text x="350" y="335" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#9ca3af">Middle office touches the trade multiple times, ensuring accuracy before settlement</text>
+                </svg>
+                <figcaption>A single trade flows through multiple handoffs between front, middle, and back office</figcaption>
+            </figure>
+
+            <p><strong>Common friction points occur at handoffs:</strong></p>
+
+            <ul>
+                <li><strong>Front to middle:</strong> Trade details may be incomplete, causing compliance check delays or IBOR position discrepancies.</li>
+                <li><strong>Middle to back:</strong> Settlement instructions may contain errors, leading to failed trades or position breaks with the custodian.</li>
+                <li><strong>Back to middle:</strong> NAV and accounting data must flow back for performance calculations; timing mismatches create reporting errors.</li>
+            </ul>
+
+            <p>Firms that maintain clear data flows, documented procedures, and regular reconciliations between offices minimize these friction points. Those relying on manual processes, email communications, and spreadsheet handoffs experience higher error rates and operational risk.</p>
+
+            <h2>Which Functions Should You Consider Outsourcing?</h2>
+
+            <p>Outsourcing patterns differ significantly by office type, reflecting which functions represent core competency versus operational necessity:</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Office</th>
+                        <th>Commonly Outsourced?</th>
+                        <th>Why or Why Not</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Front Office</td>
+                        <td>Rarely</td>
+                        <td>Core competency—investment capability is what investors pay for</td>
+                    </tr>
+                    <tr>
+                        <td>Middle Office</td>
+                        <td>Increasingly</td>
+                        <td>Requires expertise but doesn't create alpha; scalability benefits</td>
+                    </tr>
+                    <tr>
+                        <td>Back Office</td>
+                        <td>Often</td>
+                        <td>Commoditized functions; independent administration expected by LPs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Front office outsourcing</strong> is rare because investment capability defines an asset manager. Sub-advisory relationships exist, but most firms consider portfolio management their core competency.</p>
+
+            <p><strong>Middle office outsourcing</strong> is growing rapidly, particularly for trade support, compliance monitoring, and performance measurement. These functions require specialized expertise that's difficult to hire and retain at smaller firms. According to Cerulli Associates (2024), firms report 30-40% cost savings by outsourcing middle office compared to building in-house capabilities.</p>
+
+            <p><strong>Back office outsourcing</strong> to fund administrators became standard post-2008, when institutional investors began requiring independent NAV calculation and third-party oversight. Today, most institutional-quality funds use external administrators for accounting, NAV, and regulatory reporting.</p>
+
+            <p>For a detailed framework on making outsourcing decisions, see our guide on <a href="/blog/middle-office-outsourcing-vs-in-house.html">middle office outsourcing vs. in-house operations</a>.</p>
+
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <h3>Can you outsource just the middle office?</h3>
+                    <p>Yes. Many asset managers outsource middle office functions while keeping back office with their fund administrator or custodian. This is increasingly common for risk management, compliance monitoring, and performance measurement functions that require specialized expertise.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Which office is most expensive to run?</h3>
+                    <p>The front office is typically most expensive due to high compensation for investment professionals. However, middle and back office costs scale with AUM and complexity. For a $200M fund, combined middle and back office costs typically represent 15-25 basis points of AUM annually.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do small firms need all three offices?</h3>
+                    <p>Yes, all firms perform front, middle, and back office functions—the question is how they're staffed. At small firms, one or two people may handle both middle and back office. As AUM grows past $150M-$250M, specialization becomes necessary for quality and efficiency.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What happens if middle and back office aren't aligned?</h3>
+                    <p>Misalignment creates data discrepancies, failed trades, incorrect NAV calculations, and regulatory reporting errors. Common issues include position breaks between systems, missed corporate actions, and reconciliation failures. These errors damage investor confidence and create compliance risk.</p>
+                </div>
+            </div>
+
+            <h2>What Should You Do Next?</h2>
+
+            <p>Understanding the distinction between front, middle, and back office is essential for operational planning, talent allocation, and outsourcing decisions. Key takeaways:</p>
+
+            <ul>
+                <li><strong>Front office</strong> is your core competency—keep investment decisions in-house</li>
+                <li><strong>Middle office</strong> is increasingly outsourced by firms seeking expertise and scalability</li>
+                <li><strong>Back office</strong> outsourcing to fund administrators is standard practice for institutional managers</li>
+            </ul>
+
+            <p>For emerging managers, the middle office often represents the biggest gap between current capabilities and institutional expectations. Allocators expect to see proper risk management, compliance monitoring, and performance measurement during due diligence reviews.</p>
+
+            <p><strong>Related reading:</strong></p>
+            <ul>
+                <li><a href="/blog/what-is-middle-office.html">What is Middle Office? Definition, Functions & Role in Asset Management</a></li>
+                <li><a href="/blog/middle-office-outsourcing-guide.html">Middle Office Outsourcing: The Complete Guide for Asset Managers</a></li>
+                <li><a href="/blog/middle-office-outsourcing-vs-in-house.html">Middle Office Outsourcing vs. In-House: How to Decide</a></li>
+            </ul>
+
+            <div class="cta-box">
+                <h3>Need help structuring your operations?</h3>
+                <p>See how Anchor Partners helps emerging managers build institutional-quality middle office capabilities.</p>
+                <a href="https://cal.com/anchorpartners/30min" target="_blank" class="btn">
+                    Schedule a discovery call
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <a href="/" class="footer-logo">
+                    <div class="logo-mark">
+                        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="5" r="2"/>
+                            <line x1="12" y1="7" x2="12" y2="19"/>
+                            <path d="M5 19c0-4 3-7 7-7s7 3 7 7"/>
+                        </svg>
+                    </div>
+                    Anchor Partners
+                </a>
+                <p class="footer-copy">&copy; 2026 Anchor Partners</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

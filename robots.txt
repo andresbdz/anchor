@@ -1,8 +1,39 @@
 # Anchor Partners - www.anchorpartners.group
 # SEO robots.txt
 
+# Allow all standard search crawlers
 User-agent: *
 Allow: /
 
+# Explicitly allow AI search crawlers (for AI Overviews, ChatGPT Search, Perplexity, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Block training-only crawlers (optional - uncomment if you want to block AI model training)
+# User-agent: CCBot
+# Disallow: /
+#
+# User-agent: anthropic-ai
+# Disallow: /
+#
+# User-agent: cohere-ai
+# Disallow: /
+
 # Sitemap
 Sitemap: https://www.anchorpartners.group/sitemap.xml
+
+# LLMs.txt for AI-native discovery
+# See: https://www.anchorpartners.group/llms.txt
+# Extended context: https://www.anchorpartners.group/llms-full.txt

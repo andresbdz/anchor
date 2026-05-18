@@ -15,57 +15,47 @@
 | /blog/investment-operations-outsourcing-guide | Pillar | ✅ Live | investment operations outsourcing |
 | /blog/investment-operations-outsourcing-providers | Supporting | ✅ Live | investment operations outsourcing providers |
 | /blog/what-is-investment-operations-outsourcing | Supporting | ✅ Live | what is investment operations outsourcing |
+| /blog/middle-office-outsourcing-guide | Pillar | ✅ Live | middle office outsourcing |
+| /blog/middle-office-outsourcing-providers | Supporting | ✅ Live | middle office outsourcing providers |
+| /blog/middle-office-outsourcing-cost | Supporting | ✅ Live | middle office outsourcing cost |
+| /blog/middle-office-outsourcing-vs-in-house | Supporting | ✅ Live | middle office outsourcing vs in-house |
+| /blog/signs-you-need-middle-office-help | Supporting | ✅ Live | when to outsource middle office |
+| /blog/middle-office-vs-back-office | Supporting | ✅ Live | middle office vs back office |
+| /blog/what-is-middle-office | Supporting | ✅ Live | what is middle office |
 
 ---
 
-## Month 1: Foundation & Quick Wins
+## Month 1: Foundation & Quick Wins ✅ COMPLETE
 
 ### Week 1-2
-| Content | Type | Target Keyword | Priority |
-|---------|------|----------------|----------|
-| Middle Office Outsourcing: Complete Guide | Pillar (2,500+ words) | middle office outsourcing | P1 |
+| Content | Type | Target Keyword | Status |
+|---------|------|----------------|--------|
+| Middle Office Outsourcing: Complete Guide | Pillar (2,800 words) | middle office outsourcing | ✅ Live |
 
-**Outline:**
-- What is middle office? (definition section for featured snippets)
-- Middle office vs back office vs front office
-- Why asset managers outsource middle office
-- What functions can be outsourced
-- How to evaluate providers
-- Implementation process
-- Costs and ROI
-- FAQ section with schema
+**Published:** /blog/middle-office-outsourcing-guide.html (May 17, 2026)
 
 ### Week 2-3
-| Content | Type | Target Keyword | Priority |
-|---------|------|----------------|----------|
-| Build vs Buy vs Outsource: Operations Decision Framework | Supporting (1,500 words) | outsource vs hire investment operations | P1 |
+| Content | Type | Target Keyword | Status |
+|---------|------|----------------|--------|
+| Middle Office Outsourcing vs In-House | Supporting (1,600 words) | middle office outsourcing vs in-house | ✅ Live |
 
-**Outline:**
-- The three options for operations
-- When each makes sense (AUM thresholds, team size)
-- Total cost comparison (calculator widget if possible)
-- Decision checklist
-- Case example scenarios
+**Published:** /blog/middle-office-outsourcing-vs-in-house.html (May 17, 2026)
 
 ### Week 3-4
-| Content | Type | Target Keyword | Priority |
-|---------|------|----------------|----------|
-| Signs You Need Operations Help (Before It's Too Late) | Supporting (1,200 words) | when to outsource investment operations | P2 |
+| Content | Type | Target Keyword | Status |
+|---------|------|----------------|--------|
+| Signs You Need Middle Office Help | Supporting (1,200 words) | when to outsource middle office | ✅ Live |
 
-**Outline:**
-- 7-10 warning signs (listicle format)
-- Each sign with explanation and solution
-- Self-assessment questions
-- CTA to discovery call
+**Published:** /blog/signs-you-need-middle-office-help.html (May 17, 2026)
 
 ---
 
-## Month 2: Middle Office Deep Dive
+## Month 2: Middle Office Deep Dive (Partial ✅)
 
 ### Week 1-2
-| Content | Type | Target Keyword | Priority |
-|---------|------|----------------|----------|
-| Trade Reconciliation: The Hidden Time Drain | Supporting (1,500 words) | trade reconciliation outsourcing | P2 |
+| Content | Type | Target Keyword | Status |
+|---------|------|----------------|--------|
+| Trade Reconciliation: The Hidden Time Drain | Supporting (1,500 words) | trade reconciliation outsourcing | 🔲 Planned |
 
 **Outline:**
 - What is trade reconciliation
@@ -76,28 +66,18 @@
 - ROI calculation example
 
 ### Week 2-3
-| Content | Type | Target Keyword | Priority |
-|---------|------|----------------|----------|
-| Middle Office Outsourcing Costs: What to Expect | Supporting (1,200 words) | middle office outsourcing cost | P1 |
+| Content | Type | Target Keyword | Status |
+|---------|------|----------------|--------|
+| Middle Office Outsourcing Costs: What to Expect | Supporting (1,100 words) | middle office outsourcing cost | ✅ Live |
 
-**Outline:**
-- Pricing models (per-trade, AUM-based, fixed fee)
-- Cost ranges by firm size
-- Hidden costs to watch for
-- ROI framework
-- Comparison table
+**Published:** /blog/middle-office-outsourcing-cost.html (May 17, 2026)
 
 ### Week 3-4
-| Content | Type | Target Keyword | Priority |
-|---------|------|----------------|----------|
-| How to Choose a Middle Office Provider | Supporting (1,500 words) | middle office outsourcing providers | P1 |
+| Content | Type | Target Keyword | Status |
+|---------|------|----------------|--------|
+| Top Middle Office Outsourcing Providers | Supporting (1,800 words) | middle office outsourcing providers | ✅ Live |
 
-**Outline:**
-- Evaluation criteria
-- Questions to ask
-- Red flags
-- RFP template (lead magnet)
-- Provider comparison (where Anchor fits)
+**Published:** /blog/middle-office-outsourcing-providers.html (May 17, 2026)
 
 ---
 

@@ -10,17 +10,23 @@ This roadmap outlines a 4-phase approach to build organic search visibility for 
 
 **Goal:** Technical SEO foundation + content infrastructure
 
-### Week 1: Technical Setup
+### Week 1: Technical Setup ✅ COMPLETE
 
 #### Priority Tasks
-- [ ] **Create robots.txt**
+- [x] **Create robots.txt** (includes AI crawler directives for GEO)
   ```
   User-agent: *
   Allow: /
   Sitemap: https://www.anchorpartners.group/sitemap.xml
+
+  User-agent: GPTBot
+  Allow: /
+
+  User-agent: ClaudeBot
+  Allow: /
   ```
 
-- [ ] **Generate sitemap.xml** (all current pages)
+- [x] **Generate sitemap.xml** (10 blog posts + homepage)
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -38,7 +44,7 @@ This roadmap outlines a 4-phase approach to build organic search visibility for 
   </urlset>
   ```
 
-- [ ] **Create llms.txt** for AI search visibility
+- [x] **Create llms.txt** for AI search visibility ✅
   ```
   # Anchor Partners
   > Managed services firm for lower middle market asset managers
@@ -59,8 +65,8 @@ This roadmap outlines a 4-phase approach to build organic search visibility for 
   - Submit sitemap
   - Request indexing for all pages
 
-- [ ] **Set up Google Analytics 4**
-  - Install tracking
+- [x] **Set up Google Analytics 4** (G-CM4F6M73K9)
+  - Install tracking ✅
   - Set up conversion events (call bookings)
   - Create organic traffic goals
 
@@ -120,48 +126,54 @@ This roadmap outlines a 4-phase approach to build organic search visibility for 
 
 **Goal:** Content velocity + topical authority
 
-### Weeks 5-6: Pillar Content
+### Weeks 5-6: Pillar Content ✅ COMPLETE
 
-- [ ] **Publish:** Middle Office Outsourcing: Complete Guide
-  - 2,500+ words
-  - FAQPage schema
-  - HowTo schema for implementation section
-  - 3-5 internal links
+- [x] **Publish:** Middle Office Outsourcing: Complete Guide
+  - 2,800 words ✅
+  - FAQPage schema ✅
+  - HowTo schema for implementation section ✅
+  - Full internal linking to 6 spoke posts ✅
+  - GEO optimized for AI search ✅
 
-- [ ] **Create comparison table** (providers comparison asset)
+- [x] **Create comparison table** (providers comparison in providers post)
 
-### Weeks 7-8: Supporting Content
+### Weeks 7-8: Supporting Content ✅ COMPLETE
 
-- [ ] **Publish:** Build vs Buy vs Outsource: Decision Framework
-- [ ] **Publish:** Signs You Need Operations Help
+- [x] **Publish:** Middle Office Outsourcing vs In-House (1,600 words)
+- [x] **Publish:** Signs You Need Middle Office Help (1,200 words)
+- [x] **Publish:** What is Middle Office (1,400 words)
+- [x] **Publish:** Middle Office vs Back Office (1,500 words)
 
-### Weeks 9-10: Workflow Content
+### Weeks 9-10: Workflow Content (Partial)
 
 - [ ] **Publish:** Trade Reconciliation: The Hidden Time Drain
-- [ ] **Publish:** Middle Office Outsourcing Costs: What to Expect
+- [x] **Publish:** Middle Office Outsourcing Costs: What to Expect (1,100 words)
 
-### Weeks 11-12: Commercial Content
+### Weeks 11-12: Commercial Content ✅ COMPLETE
 
-- [ ] **Publish:** How to Choose a Middle Office Provider
+- [x] **Publish:** Top Middle Office Outsourcing Providers (1,800 words)
 - [ ] **Create:** RFP Template (lead magnet)
 - [ ] **Set up:** Lead capture form for gated content
 
-### Internal Linking Architecture
+### Internal Linking Architecture ✅ IMPLEMENTED
 
 ```
 Homepage
     └── Blog
-        ├── Investment Operations Outsourcing Guide (Pillar)
-        │   ├── What is Investment Operations Outsourcing?
-        │   ├── Investment Operations Providers Comparison
-        │   └── [Link to new Middle Office Guide]
+        ├── Investment Operations Outsourcing Guide (Pillar) ✅
+        │   ├── What is Investment Operations Outsourcing? ✅
+        │   └── Investment Operations Providers Comparison ✅
         │
-        └── Middle Office Outsourcing Guide (Pillar - NEW)
-            ├── Build vs Buy vs Outsource
-            ├── Signs You Need Help
-            ├── Trade Reconciliation
-            └── Middle Office Costs
+        └── Middle Office Outsourcing Guide (Pillar) ✅
+            ├── What is Middle Office? ✅
+            ├── Middle Office vs Back Office ✅
+            ├── Signs You Need Middle Office Help ✅
+            ├── Outsourcing vs In-House ✅
+            ├── Middle Office Outsourcing Cost ✅
+            └── Middle Office Outsourcing Providers ✅
 ```
+
+**Cross-pillar links:** Investment Ops ↔ Middle Office clusters interlinked
 
 ---
 
@@ -308,13 +320,15 @@ Homepage
 
 ## Immediate Next Steps
 
-1. **Today:** Create robots.txt and sitemap.xml
+1. ~~**Today:** Create robots.txt and sitemap.xml~~ ✅ Done
 2. **This week:** Submit to Google Search Console
-3. **This week:** Set up GA4 with conversion tracking
-4. **Next week:** Begin Middle Office pillar post outline
-5. **Ongoing:** Follow content calendar
+3. ~~**This week:** Set up GA4 with conversion tracking~~ ✅ Done (G-CM4F6M73K9)
+4. ~~**Next week:** Begin Middle Office pillar post outline~~ ✅ Done (full cluster live)
+5. **Next:** Trade Reconciliation post (Month 2, Week 1-2)
+6. **Next:** Emerging Manager Operations pillar (Month 3)
 
 ---
 
 *Roadmap created: May 2026*
+*Last updated: May 17, 2026*
 *Review cadence: Bi-weekly for Phase 1-2, Monthly for Phase 3-4*

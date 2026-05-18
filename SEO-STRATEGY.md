@@ -1,5 +1,63 @@
 # Anchor Partners SEO Strategy
 
+---
+
+## Content Creation Workflow
+
+> **IMPORTANT:** This is the canonical workflow for creating new content clusters. Always follow this order.
+
+### Step 1: Check SEO-STRATEGY.md First
+Before starting any new cluster, check the **Keyword Strategy** section below for validated keywords.
+- Use SEMrush/Ahrefs validated data only
+- Do NOT run fresh keyword discovery if data already exists here
+- If keywords are missing, validate in SEMrush first, then add to this doc
+
+### Step 2: Run /seo-cluster for Architecture
+Use the cluster skill to:
+- Validate SERP overlap between keywords (which can share a page)
+- Design hub-and-spoke structure
+- Create internal link matrix
+- **Input:** Keywords FROM this strategy doc
+- **Output:** `clusters/[name]/plan.md`, `plan.json`, `cluster-map.html`
+
+### Step 3: Run /seo-content-brief for Each Post
+Generate detailed briefs with:
+- Validated keywords from Step 1
+- AEO (Answer Engine Optimization) requirements
+- Competitor gap analysis
+- **Output:** `clusters/[name]/briefs/*.md`
+
+### Step 4: Update CONTENT-CALENDAR.md
+Add the new cluster posts to the publishing schedule with:
+- Target publish dates
+- Status tracking
+- Word counts
+
+### Step 5: Write Content
+Follow the briefs exactly, including:
+- Keyword placement rules
+- AEO-optimized definitions (first 50-60 words)
+- FAQ schema content
+- Internal links
+
+### File Structure
+```
+SEO-STRATEGY.md          ← Master keywords + strategy (START HERE)
+CONTENT-CALENDAR.md      ← Publishing schedule
+clusters/
+├── [cluster-name]/
+│   ├── plan.md          ← Cluster architecture
+│   ├── plan.json        ← Machine-readable plan
+│   ├── cluster-map.html ← Visual map
+│   ├── scorecard.md     ← Post-publish metrics
+│   └── briefs/
+│       ├── 01-pillar-*.md
+│       ├── 02-*.md
+│       └── ...
+```
+
+---
+
 ## Executive Summary
 
 **Business:** Anchor Partners — Managed services firm for lower middle market asset managers ($50M+ AUM, 5-30 employees)
@@ -109,7 +167,9 @@ The **$50M-$500M AUM segment** is underserved in search. Enterprise players don'
 | back office outsourcing solutions | 110 | 11 | ✅ SEMrush |
 | outsourcing back office operations | 260 | 10 | ✅ SEMrush |
 | small business back office outsourcing | 210 | 1 | ✅ SEMrush |
+| back office vs middle office | 140 | — | ✅ SEMrush May 2026 |
 | back office outsourcing benefits | 30 | 6 | ✅ SEMrush |
+| back office outsourcing vs in-house | 30 | — | ✅ SEMrush May 2026 |
 | what is back office outsourcing | 20 | — | ✅ SEMrush |
 
 ### Branded Keywords (Future)
@@ -139,14 +199,15 @@ The **$50M-$500M AUM segment** is underserved in search. Enterprise players don'
 - **Supporting:** Middle Office Outsourcing Cost ✅
 - **Supporting:** Top Middle Office Outsourcing Providers ✅
 
-#### Pillar 3: Back Office Outsourcing 🔲 PLANNED
-- **Pillar:** Back Office Outsourcing for Asset Managers: Complete Guide
-- **Supporting:** What is Back Office in Asset Management?
-- **Supporting:** Back Office Outsourcing vs In-House
-- **Supporting:** Back Office Outsourcing Cost
-- **Supporting:** Top Back Office Outsourcing Providers
-- **Supporting:** Back Office vs Fund Administration: Key Differences
-- **Note:** Validate keyword volume before executing. May overlap with fund admin content.
+#### Pillar 3: Back Office Outsourcing ✅ COMPLETE
+- **Pillar:** Back Office Outsourcing: Complete Guide for Asset Managers ✅
+- **Supporting:** What is Back Office in Asset Management? ✅
+- **Supporting:** Back Office vs Middle Office vs Front Office ✅
+- **Supporting:** Back Office Outsourcing Cost ✅
+- **Supporting:** Back Office Outsourcing vs In-House ✅
+- **Supporting:** Top Back Office Outsourcing Companies ✅
+- **Total Volume:** 3,490+ (validated SEMrush May 2026)
+- **Published:** May 18, 2026
 
 #### Pillar 4: Emerging Manager Operations 🔲 PLANNED
 - **Pillar:** Operational Best Practices for Emerging Managers
@@ -316,13 +377,15 @@ The **$50M-$500M AUM segment** is underserved in search. Enterprise players don'
 
 | Metric | Target (3mo) | Current |
 |--------|--------------|---------|
-| Indexed Pages | 15 | 10 |
-| Blog Posts | — | 10 |
-| Content Clusters | — | 2 complete |
-| Total Words | — | ~17,000 |
+| Indexed Pages | 15 | 16 |
+| Blog Posts (Live) | — | 16 |
+| Blog Posts (Briefed) | — | 0 |
+| Content Clusters | — | 3 complete |
+| Total Words (Live) | — | ~27,000 |
+| Keyword Volume (Targeted) | — | 3,490+ (back office cluster) |
 
 ---
 
 *Strategy created: May 2026*
-*Last updated: May 17, 2026*
+*Last updated: May 18, 2026*
 *Review cadence: Monthly*

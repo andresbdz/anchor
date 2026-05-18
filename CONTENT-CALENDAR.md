@@ -1,5 +1,10 @@
 # Content Calendar: Anchor Partners
 
+> **Workflow:** See `SEO-STRATEGY.md` for the complete content creation workflow.
+> Keywords must be validated there FIRST before creating clusters.
+
+---
+
 ## Content Strategy Overview
 
 **Primary Goal:** Generate organic leads from COOs/CFOs at emerging asset managers
@@ -68,60 +73,60 @@
 
 ---
 
-## Month 3: Back Office Outsourcing 🔲 PLANNED
+## Month 3: Back Office Outsourcing ✅ COMPLETE
 
-> **Validated via SEMrush (May 2026):** "back office outsourcing" = 1,300 volume, KD 12
+> **Validated via SEMrush (May 2026):** Total cluster volume = 3,490+
+> **Briefs Location:** `clusters/back-office-outsourcing/briefs/`
 
 ### Week 1-2
-| Content | Type | Target Keyword | Volume | KD |
-|---------|------|----------------|--------|-----|
-| Back Office Outsourcing: Complete Guide | Pillar (2,500+ words) | back office outsourcing | 1,300 | 12 |
+| Content | Type | Target Keyword | Volume | KD | Status |
+|---------|------|----------------|--------|-----|--------|
+| Back Office Outsourcing: Complete Guide | Pillar (3,000 words) | back office outsourcing | 1,300 | 12 | ✅ Live |
 
-**Outline:**
-- What is back office in asset management? (definition for AI citation)
-- Back office vs middle office vs fund administration
-- Why asset managers outsource back office
-- What functions can be outsourced (settlements, accounting, reconciliation, reporting)
-- How to evaluate providers
-- Implementation process
-- Costs and ROI
-- FAQ section with schema
+**Published:** /blog/back-office-outsourcing-guide.html (May 18, 2026)
+
+**Additional Keywords Targeted:**
+- back office outsourcing services (720)
+- outsourcing back office operations (260)
+- small business back office outsourcing (210)
+- private equity / RIA / hedge fund back office outsourcing (140 combined)
+
+### Week 2
+| Content | Type | Target Keyword | Volume | KD | Status |
+|---------|------|----------------|--------|-----|--------|
+| What is Back Office in Asset Management? | Explainer (1,200 words) | what is back office outsourcing | 20 | — | ✅ Live |
+
+**Published:** /blog/what-is-back-office-asset-management.html (May 18, 2026)
 
 ### Week 2-3
-| Content | Type | Target Keyword | Volume | KD |
-|---------|------|----------------|--------|-----|
-| What is Back Office in Asset Management? | Explainer (1,200 words) | what is back office outsourcing | 20 | — |
+| Content | Type | Target Keyword | Volume | KD | Status |
+|---------|------|----------------|--------|-----|--------|
+| Back Office vs Middle Office vs Front Office | Comparison (1,400 words) | back office vs middle office | 140 | — | ✅ Live |
 
-**Outline:**
-- Definition (AI-citation ready in first 60 words)
-- Core functions: settlements, accounting, reconciliation, reporting
-- Who handles it at different firm sizes
-- Back office vs middle office vs front office
-- Link to pillar
+**Published:** /blog/back-office-vs-middle-office-vs-front-office.html (May 18, 2026)
+
+### Week 3
+| Content | Type | Target Keyword | Volume | KD | Status |
+|---------|------|----------------|--------|-----|--------|
+| Back Office Outsourcing Cost: What to Expect | Guide (1,200 words) | back office outsourcing cost | 10 | — | ✅ Live |
+
+**Published:** /blog/back-office-outsourcing-cost.html (May 18, 2026)
 
 ### Week 3-4
-| Content | Type | Target Keyword | Volume | KD |
-|---------|------|----------------|--------|-----|
-| Back Office Outsourcing Cost: What to Expect | Supporting (1,200 words) | outsourced back office cost | 10 | — |
+| Content | Type | Target Keyword | Volume | KD | Status |
+|---------|------|----------------|--------|-----|--------|
+| Back Office Outsourcing vs In-House | Comparison (1,400 words) | back office outsourcing vs in-house | 30 | — | ✅ Live |
 
-**Outline:**
-- Pricing models (AUM-based, per-transaction, fixed fee)
-- Cost ranges by firm size
-- Hidden costs to watch for
-- ROI framework
-- Comparison to in-house costs
+**Published:** /blog/back-office-outsourcing-vs-in-house.html (May 18, 2026)
 
 ### Week 4
-| Content | Type | Target Keyword | Volume | KD |
-|---------|------|----------------|--------|-----|
-| Top Back Office Outsourcing Providers | Best-of (1,500 words) | back office outsourcing companies | 480 | 22 |
+| Content | Type | Target Keyword | Volume | KD | Status |
+|---------|------|----------------|--------|-----|--------|
+| Top Back Office Outsourcing Companies | Best-of (1,800 words) | back office outsourcing companies | 480 | 22 | ✅ Live |
 
-**Outline:**
-- Evaluation criteria
-- Provider comparison table
-- Questions to ask
-- Red flags
-- Where Anchor fits (with disclosure)
+**Published:** /blog/back-office-outsourcing-companies.html (May 18, 2026)
+
+**Month 3 Totals:** 6 posts | ~10,000 words | 3,490+ keyword volume
 
 ---
 
@@ -296,4 +301,5 @@
 ---
 
 *Calendar created: May 2026*
-*Next review: End of Month 1*
+*Last updated: May 18, 2026*
+*Next review: End of Month 3*

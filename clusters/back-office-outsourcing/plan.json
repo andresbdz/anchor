@@ -1,0 +1,146 @@
+{
+  "cluster": {
+    "name": "Back Office Outsourcing",
+    "seed_keyword": "back office outsourcing",
+    "created": "2026-05-18",
+    "status": "live"
+  },
+  "pillar": {
+    "title": "Back Office Outsourcing: The Complete Guide for Asset Managers",
+    "keyword": "back office outsourcing",
+    "secondary_keywords": [
+      "back office outsourcing services",
+      "outsourcing back office operations",
+      "back office outsourcing solutions",
+      "small business back office outsourcing"
+    ],
+    "industry_keywords": [
+      "private equity back office outsourcing",
+      "ria back office outsourcing",
+      "hedge fund back office outsourcing",
+      "asset management back office outsourcing"
+    ],
+    "volume": 1300,
+    "total_addressable_volume": 2840,
+    "kd": 12,
+    "template": "ultimate-guide",
+    "word_count": 3000,
+    "url": "/blog/back-office-outsourcing-guide",
+    "status": "live",
+    "keyword_source": "SEMrush May 2026"
+  },
+  "clusters": [
+    {
+      "name": "Definitions & Concepts",
+      "color": "#4A90D9",
+      "intent": "informational",
+      "posts": [
+        {
+          "id": "1.1",
+          "title": "What is Back Office in Asset Management?",
+          "keyword": "what is back office outsourcing",
+          "secondary_keywords": ["back office definition", "back office functions", "back office services"],
+          "volume": 20,
+          "template": "explainer",
+          "word_count": 1200,
+          "url": "/blog/what-is-back-office-asset-management",
+          "status": "live"
+        },
+        {
+          "id": "1.2",
+          "title": "Back Office vs Middle Office vs Front Office",
+          "keyword": "back office vs middle office",
+          "secondary_keywords": ["front office vs back office", "middle office functions"],
+          "volume": 140,
+          "template": "comparison",
+          "word_count": 1400,
+          "url": "/blog/back-office-vs-middle-office-vs-front-office",
+          "status": "live",
+          "priority": "P2",
+          "notes": "Recommended addition based on SERP data"
+        }
+      ]
+    },
+    {
+      "name": "Evaluation & Decision",
+      "color": "#7B68EE",
+      "intent": "commercial",
+      "posts": [
+        {
+          "id": "2.1",
+          "title": "Back Office Outsourcing Cost: What to Expect",
+          "keyword": "back office outsourcing cost",
+          "secondary_keywords": ["back office outsourcing pricing", "outsourced back office cost", "BPO pricing"],
+          "volume": 10,
+          "template": "guide",
+          "word_count": 1200,
+          "url": "/blog/back-office-outsourcing-cost",
+          "status": "live"
+        },
+        {
+          "id": "2.2",
+          "title": "Back Office Outsourcing vs In-House: Which is Right?",
+          "keyword": "back office outsourcing vs in-house",
+          "secondary_keywords": ["outsource vs in-house back office", "should I outsource back office"],
+          "volume": 30,
+          "template": "comparison",
+          "word_count": 1400,
+          "url": "/blog/back-office-outsourcing-vs-in-house",
+          "status": "live",
+          "priority": "P2",
+          "notes": "Recommended addition based on SERP data"
+        }
+      ]
+    },
+    {
+      "name": "Provider Research",
+      "color": "#C9A84C",
+      "intent": "commercial",
+      "posts": [
+        {
+          "id": "3.1",
+          "title": "Top Back Office Outsourcing Companies (2026)",
+          "keyword": "back office outsourcing companies",
+          "secondary_keywords": ["best back office outsourcing providers", "top back office BPO"],
+          "volume": 480,
+          "kd": 22,
+          "template": "best-of",
+          "word_count": 1800,
+          "url": "/blog/back-office-outsourcing-companies",
+          "status": "live"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {"from": "1.1", "to": "pillar", "type": "mandatory", "anchor": "back office outsourcing"},
+    {"from": "1.2", "to": "pillar", "type": "mandatory", "anchor": "back office outsourcing guide"},
+    {"from": "2.1", "to": "pillar", "type": "mandatory", "anchor": "complete guide to back office outsourcing"},
+    {"from": "2.2", "to": "pillar", "type": "mandatory", "anchor": "back office outsourcing"},
+    {"from": "3.1", "to": "pillar", "type": "mandatory", "anchor": "back office outsourcing guide"},
+    {"from": "pillar", "to": "1.1", "type": "mandatory", "anchor": "what is back office"},
+    {"from": "pillar", "to": "1.2", "type": "mandatory", "anchor": "back office vs middle office"},
+    {"from": "pillar", "to": "2.1", "type": "mandatory", "anchor": "back office outsourcing costs"},
+    {"from": "pillar", "to": "2.2", "type": "mandatory", "anchor": "outsourcing vs in-house"},
+    {"from": "pillar", "to": "3.1", "type": "mandatory", "anchor": "top back office providers"},
+    {"from": "1.1", "to": "1.2", "type": "recommended", "anchor": "back office vs middle office"},
+    {"from": "1.2", "to": "1.1", "type": "recommended", "anchor": "what is back office"},
+    {"from": "2.1", "to": "2.2", "type": "recommended", "anchor": "in-house vs outsourcing"},
+    {"from": "2.2", "to": "2.1", "type": "recommended", "anchor": "back office outsourcing cost"},
+    {"from": "2.1", "to": "3.1", "type": "recommended", "anchor": "back office providers"},
+    {"from": "3.1", "to": "2.1", "type": "recommended", "anchor": "pricing guide"},
+    {"from": "pillar", "to": "/blog/middle-office-outsourcing-guide", "type": "cross-cluster", "anchor": "middle office outsourcing"},
+    {"from": "1.2", "to": "/blog/what-is-middle-office", "type": "cross-cluster", "anchor": "what is middle office"},
+    {"from": "1.2", "to": "/blog/middle-office-vs-back-office", "type": "cross-cluster", "anchor": "middle office functions"}
+  ],
+  "meta": {
+    "total_posts": 6,
+    "total_clusters": 3,
+    "total_links": 19,
+    "estimated_words": 10000,
+    "core_posts": 4,
+    "expansion_posts": 2,
+    "total_keyword_volume": 3490,
+    "keyword_source": "SEMrush May 2026"
+  }
+}

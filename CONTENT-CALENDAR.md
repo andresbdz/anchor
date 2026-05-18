@@ -50,22 +50,9 @@
 
 ---
 
-## Month 2: Middle Office Deep Dive (Partial ✅)
+## Month 2: Middle Office Deep Dive ✅ COMPLETE
 
 ### Week 1-2
-| Content | Type | Target Keyword | Status |
-|---------|------|----------------|--------|
-| Trade Reconciliation: The Hidden Time Drain | Supporting (1,500 words) | trade reconciliation outsourcing | 🔲 Planned |
-
-**Outline:**
-- What is trade reconciliation
-- Why it takes so much time
-- Common pain points and errors
-- Manual vs automated approaches
-- Outsourcing benefits and process
-- ROI calculation example
-
-### Week 2-3
 | Content | Type | Target Keyword | Status |
 |---------|------|----------------|--------|
 | Middle Office Outsourcing Costs: What to Expect | Supporting (1,100 words) | middle office outsourcing cost | ✅ Live |
@@ -184,14 +171,27 @@
 ### Week 1-2
 | Content | Type | Target Keyword | Priority |
 |---------|------|----------------|----------|
-| NAV Calculation: In-House vs Outsourced | Supporting (1,500 words) | NAV calculation outsourcing | P2 |
+| Trade Reconciliation: The Hidden Time Drain | Supporting (1,500 words) | trade reconciliation outsourcing | P2 |
+
+**Outline:**
+- What is trade reconciliation
+- Why it takes so much time
+- Common pain points and errors
+- Manual vs automated approaches
+- Outsourcing benefits and process
+- ROI calculation example
 
 ### Week 2-3
 | Content | Type | Target Keyword | Priority |
 |---------|------|----------------|----------|
-| Investor Reporting: Best Practices for Emerging Managers | Supporting (1,200 words) | hedge fund investor reporting | P2 |
+| NAV Calculation: In-House vs Outsourced | Supporting (1,500 words) | NAV calculation outsourcing | P2 |
 
 ### Week 3-4
+| Content | Type | Target Keyword | Priority |
+|---------|------|----------------|----------|
+| Investor Reporting: Best Practices for Emerging Managers | Supporting (1,200 words) | hedge fund investor reporting | P2 |
+
+### Week 4
 | Content | Type | Target Keyword | Priority |
 |---------|------|----------------|----------|
 | Regulatory Reporting Guide for Asset Managers | Pillar (2,000 words) | asset manager regulatory reporting | P2 |

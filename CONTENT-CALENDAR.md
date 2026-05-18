@@ -81,7 +81,64 @@
 
 ---
 
-## Month 3: Emerging Manager Focus
+## Month 3: Back Office Outsourcing 🔲 PLANNED
+
+> **Validated via SEMrush (May 2026):** "back office outsourcing" = 1,300 volume, KD 12
+
+### Week 1-2
+| Content | Type | Target Keyword | Volume | KD |
+|---------|------|----------------|--------|-----|
+| Back Office Outsourcing: Complete Guide | Pillar (2,500+ words) | back office outsourcing | 1,300 | 12 |
+
+**Outline:**
+- What is back office in asset management? (definition for AI citation)
+- Back office vs middle office vs fund administration
+- Why asset managers outsource back office
+- What functions can be outsourced (settlements, accounting, reconciliation, reporting)
+- How to evaluate providers
+- Implementation process
+- Costs and ROI
+- FAQ section with schema
+
+### Week 2-3
+| Content | Type | Target Keyword | Volume | KD |
+|---------|------|----------------|--------|-----|
+| What is Back Office in Asset Management? | Explainer (1,200 words) | what is back office outsourcing | 20 | — |
+
+**Outline:**
+- Definition (AI-citation ready in first 60 words)
+- Core functions: settlements, accounting, reconciliation, reporting
+- Who handles it at different firm sizes
+- Back office vs middle office vs front office
+- Link to pillar
+
+### Week 3-4
+| Content | Type | Target Keyword | Volume | KD |
+|---------|------|----------------|--------|-----|
+| Back Office Outsourcing Cost: What to Expect | Supporting (1,200 words) | outsourced back office cost | 10 | — |
+
+**Outline:**
+- Pricing models (AUM-based, per-transaction, fixed fee)
+- Cost ranges by firm size
+- Hidden costs to watch for
+- ROI framework
+- Comparison to in-house costs
+
+### Week 4
+| Content | Type | Target Keyword | Volume | KD |
+|---------|------|----------------|--------|-----|
+| Top Back Office Outsourcing Providers | Best-of (1,500 words) | back office outsourcing companies | 480 | 22 |
+
+**Outline:**
+- Evaluation criteria
+- Provider comparison table
+- Questions to ask
+- Red flags
+- Where Anchor fits (with disclosure)
+
+---
+
+## Month 4: Emerging Manager Focus
 
 ### Week 1-2
 | Content | Type | Target Keyword | Priority |
@@ -122,7 +179,7 @@
 
 ---
 
-## Month 4: Specific Workflows
+## Month 5: Specific Workflows
 
 ### Week 1-2
 | Content | Type | Target Keyword | Priority |
@@ -141,7 +198,7 @@
 
 ---
 
-## Month 5: Comparison & Commercial Content
+## Month 6: Comparison & Commercial Content
 
 ### Week 1-2
 | Content | Type | Target Keyword | Priority |
@@ -160,7 +217,7 @@
 
 ---
 
-## Month 6: Authority Building
+## Month 7: Authority Building
 
 ### Week 1-2
 | Content | Type | Target Keyword | Priority |

@@ -83,32 +83,34 @@ The **$50M-$500M AUM segment** is underserved in search. Enterprise players don'
 
 ## Keyword Strategy
 
-### Primary Keywords (High Intent, Lead Generation)
-| Keyword | Monthly Volume | Difficulty | Priority |
-|---------|---------------|------------|----------|
-| investment operations outsourcing | 200-500 | Medium | P1 |
-| middle office outsourcing | 200-400 | Medium | P1 |
-| fund operations outsourcing | 100-200 | Low-Med | P1 |
-| back office outsourcing asset management | 50-150 | Low | P1 |
-| operations outsourcing emerging managers | <50 | Low | P1 |
+> ⚠️ **Note:** Validate keywords with SEMrush/Ahrefs before prioritizing new clusters.
 
-### Secondary Keywords (Awareness, Top-of-Funnel)
-| Keyword | Monthly Volume | Difficulty | Priority |
-|---------|---------------|------------|----------|
-| asset manager back office solutions | 100-200 | Low-Med | P2 |
-| outsource fund accounting | 100-200 | Medium | P2 |
-| hedge fund operations services | 50-150 | Low | P2 |
-| investment operations managed services | <50 | Low | P2 |
-| middle office outsourcing cost | <50 | Low | P2 |
+### Primary Keywords (High Intent, Lead Generation)
+| Keyword | Volume | KD | CPC | Source |
+|---------|--------|-----|-----|--------|
+| back office outsourcing | 1,300 | 12 | $16.94 | ✅ SEMrush May 2026 |
+| back office outsourcing services | 720 | 6 | $32.73 | ✅ SEMrush May 2026 |
+| back office outsourcing companies | 480 | 22 | $37.64 | ✅ SEMrush May 2026 |
+| middle office outsourcing | TBD | TBD | TBD | ✅ SEMrush (has volume) |
+| investment operations outsourcing | 200-500 | Medium | — | ❌ Estimated |
+| fund operations outsourcing | 100-200 | Low-Med | — | ❌ Estimated |
+
+### Asset Management Specific Keywords
+| Keyword | Volume | KD | CPC | Source |
+|---------|--------|-----|-----|--------|
+| private equity back office outsourcing | 70 | 0 | — | ✅ SEMrush May 2026 |
+| asset management back office outsourcing | 50 | 1 | — | ✅ SEMrush May 2026 |
+| ria back office outsourcing | 50 | 0 | $22.56 | ✅ SEMrush May 2026 |
+| hedge fund back office outsourcing | 20 | — | — | ✅ SEMrush May 2026 |
 
 ### Long-Tail Keywords (Bottom-of-Funnel)
-| Keyword | Priority |
-|---------|----------|
-| investment operations outsourcing providers comparison | P1 |
-| best middle office outsourcing for small funds | P1 |
-| outsource vs hire operations asset manager | P2 |
-| fund operations outsourcing cost calculator | P2 |
-| when to outsource investment operations | P2 |
+| Keyword | Volume | KD | Source |
+|---------|--------|-----|--------|
+| back office outsourcing solutions | 110 | 11 | ✅ SEMrush |
+| outsourcing back office operations | 260 | 10 | ✅ SEMrush |
+| small business back office outsourcing | 210 | 1 | ✅ SEMrush |
+| back office outsourcing benefits | 30 | 6 | ✅ SEMrush |
+| what is back office outsourcing | 20 | — | ✅ SEMrush |
 
 ### Branded Keywords (Future)
 - anchor partners asset management
@@ -137,13 +139,22 @@ The **$50M-$500M AUM segment** is underserved in search. Enterprise players don'
 - **Supporting:** Middle Office Outsourcing Cost ✅
 - **Supporting:** Top Middle Office Outsourcing Providers ✅
 
-#### Pillar 3: Emerging Manager Operations
+#### Pillar 3: Back Office Outsourcing 🔲 PLANNED
+- **Pillar:** Back Office Outsourcing for Asset Managers: Complete Guide
+- **Supporting:** What is Back Office in Asset Management?
+- **Supporting:** Back Office Outsourcing vs In-House
+- **Supporting:** Back Office Outsourcing Cost
+- **Supporting:** Top Back Office Outsourcing Providers
+- **Supporting:** Back Office vs Fund Administration: Key Differences
+- **Note:** Validate keyword volume before executing. May overlap with fund admin content.
+
+#### Pillar 4: Emerging Manager Operations 🔲 PLANNED
 - **Pillar:** Operational Best Practices for Emerging Managers
 - **Supporting:** How to Build an Operating Model Under $500M AUM
 - **Supporting:** Common Operational Mistakes New Funds Make
 - **Supporting:** Investor Due Diligence: Operations Checklist
 
-#### Pillar 4: Specific Workflow Content (After Service Line Decided)
+#### Pillar 5: Specific Workflow Content (After Service Line Decided)
 - Trade reconciliation automation
 - NAV calculation outsourcing
 - Investor reporting solutions

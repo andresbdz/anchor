@@ -130,48 +130,7 @@
 
 ---
 
-## Month 4: Emerging Manager Focus
-
-### Week 1-2
-| Content | Type | Target Keyword | Priority |
-|---------|------|----------------|----------|
-| Operations Playbook for Emerging Managers | Pillar (2,500+ words) | emerging manager operations | P1 |
-
-**Outline:**
-- Day-one operational requirements
-- Scaling operations from $50M to $500M
-- Common mistakes new managers make
-- Operational due diligence expectations
-- Building vs outsourcing at each stage
-- Technology stack recommendations
-- FAQ section
-
-### Week 2-3
-| Content | Type | Target Keyword | Priority |
-|---------|------|----------------|----------|
-| What Allocators Look for in Operational Due Diligence | Supporting (1,200 words) | operational due diligence hedge fund | P2 |
-
-**Outline:**
-- DDQ requirements overview
-- Key operational areas reviewed
-- Common red flags for allocators
-- How to prepare
-- Outsourcing as a due diligence advantage
-
-### Week 3-4
-| Content | Type | Target Keyword | Priority |
-|---------|------|----------------|----------|
-| 5 Operational Mistakes That Kill Emerging Funds | Supporting (1,000 words) | hedge fund operational mistakes | P2 |
-
-**Outline:**
-- Listicle format
-- Each mistake with real-world consequences
-- How to avoid/fix
-- Self-assessment
-
----
-
-## Month 5: Specific Workflows
+## Month 4: Specific Workflows
 
 ### Week 1-2
 | Content | Type | Target Keyword | Priority |
@@ -203,7 +162,7 @@
 
 ---
 
-## Month 6: Comparison & Commercial Content
+## Month 5: Comparison & Commercial Content
 
 ### Week 1-2
 | Content | Type | Target Keyword | Priority |
@@ -222,7 +181,7 @@
 
 ---
 
-## Month 7: Authority Building
+## Month 6: Authority Building
 
 ### Week 1-2
 | Content | Type | Target Keyword | Priority |

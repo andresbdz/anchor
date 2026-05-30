@@ -181,19 +181,13 @@ Homepage
 
 **Goal:** Authority building + commercial keywords
 
-### Weeks 13-16: Emerging Manager Focus
-
-- [ ] **Publish:** Operations Playbook for Emerging Managers (Pillar)
-- [ ] **Publish:** What Allocators Look for in Operational Due Diligence
-- [ ] **Publish:** 5 Operational Mistakes That Kill Emerging Funds
-
-### Weeks 17-20: Workflow Deep Dives
+### Weeks 13-16: Workflow Deep Dives
 
 - [ ] **Publish:** NAV Calculation: In-House vs Outsourced
 - [ ] **Publish:** Investor Reporting Best Practices
 - [ ] **Publish:** Regulatory Reporting Guide (Pillar)
 
-### Weeks 21-24: Comparison Content
+### Weeks 17-20: Comparison Content
 
 - [ ] **Publish:** Fund Admin vs Operations Outsourcing
 - [ ] **Publish:** Managed Services vs Consulting
@@ -324,8 +318,7 @@ Homepage
 2. **This week:** Submit to Google Search Console
 3. ~~**This week:** Set up GA4 with conversion tracking~~ ✅ Done (G-CM4F6M73K9)
 4. ~~**Next week:** Begin Middle Office pillar post outline~~ ✅ Done (full cluster live)
-5. **Next:** Trade Reconciliation post (Month 2, Week 1-2)
-6. **Next:** Emerging Manager Operations pillar (Month 3)
+5. **Next:** Trade Reconciliation post (Month 4)
 
 ---
 

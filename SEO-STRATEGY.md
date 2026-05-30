@@ -209,13 +209,7 @@ The **$50M-$500M AUM segment** is underserved in search. Enterprise players don'
 - **Total Volume:** 3,490+ (validated SEMrush May 2026)
 - **Published:** May 18, 2026
 
-#### Pillar 4: Emerging Manager Operations 🔲 PLANNED
-- **Pillar:** Operational Best Practices for Emerging Managers
-- **Supporting:** How to Build an Operating Model Under $500M AUM
-- **Supporting:** Common Operational Mistakes New Funds Make
-- **Supporting:** Investor Due Diligence: Operations Checklist
-
-#### Pillar 5: Specific Workflow Content (After Service Line Decided)
+#### Pillar 4: Specific Workflow Content (After Service Line Decided)
 - Trade reconciliation automation
 - NAV calculation outsourcing
 - Investor reporting solutions
@@ -367,9 +361,8 @@ The **$50M-$500M AUM segment** is underserved in search. Enterprise players don'
 1. ~~**Immediate:** Create sitemap.xml and robots.txt~~ ✅ Done
 2. **This Week:** Submit sitemap to Google Search Console
 3. **This Week:** Add About/Team page content (when available)
-4. **Next:** Trade Reconciliation post (Month 2)
-5. **Next:** Emerging Manager Operations pillar (Month 3)
-6. **Ongoing:** Monthly content cadence per strategy above
+4. **Next:** Trade Reconciliation post (Month 4)
+5. **Ongoing:** Monthly content cadence per strategy above
 
 ---
 
